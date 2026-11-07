@@ -1,35 +1,35 @@
 {
- "corte": "2026-11-07T01:10:29.732Z",
+ "corte": "2026-11-07T04:04:55.933Z",
  "equipo": {
   "ingenieros": 36,
   "desde": "2026-09-18",
   "hasta": "2026-11-06"
  },
  "inmuebles": {
-  "total": 4477,
+  "total": 4480,
   "edificios": 3491,
-  "casas": 986,
+  "casas": 989,
   "por_categoria": {
-   "sin_dano": 1607,
-   "menor": 1166,
+   "sin_dano": 1608,
+   "menor": 1167,
    "restringido": 218,
-   "mayor": 593,
+   "mayor": 594,
    "colapso": 35,
    "seguro": 633,
    "sin_acceso": 225
   }
  },
  "arp": {
-  "requieren": 1977,
-  "no_requieren": 2240,
-  "con_presupuesto": 980,
-  "crr": 9645821647,
-  "costos_directos": 8689584473,
+  "requieren": 1979,
+  "no_requieren": 2241,
+  "con_presupuesto": 981,
+  "crr": 9744460266,
+  "costos_directos": 8775270119,
   "por_categoria": {
    "menor": {
-    "inmuebles": 1166,
-    "con_presupuesto": 595,
-    "crr": 3392422955
+    "inmuebles": 1167,
+    "con_presupuesto": 596,
+    "crr": 3393405428
    },
    "restringido": {
     "inmuebles": 218,
@@ -37,15 +37,15 @@
     "crr": 1066202017
    },
    "mayor": {
-    "inmuebles": 593,
+    "inmuebles": 594,
     "con_presupuesto": 275,
-    "crr": 5187196675
+    "crr": 5284852821
    }
   },
   "revision": {
    "verificado": 36,
    "en_revision": 25,
-   "sin_revisar": 919
+   "sin_revisar": 920
   }
  },
  "comunas": [
@@ -223,14 +223,14 @@
    "clave": "11 · La Macarena",
    "num": 11,
    "nombre": "La Macarena",
-   "inmuebles": 315,
-   "no_habitables": 90,
-   "arp": 168,
+   "inmuebles": 316,
+   "no_habitables": 91,
+   "arp": 169,
    "cats": {
     "sin_dano": 124,
     "menor": 73,
     "restringido": 10,
-    "mayor": 85,
+    "mayor": 86,
     "colapso": 5,
     "seguro": 3,
     "sin_acceso": 15
@@ -240,12 +240,12 @@
    "clave": "12 · Nuevo Horizonte",
    "num": 12,
    "nombre": "Nuevo Horizonte",
-   "inmuebles": 94,
+   "inmuebles": 96,
    "no_habitables": 4,
-   "arp": 66,
+   "arp": 67,
    "cats": {
-    "sin_dano": 23,
-    "menor": 59,
+    "sin_dano": 24,
+    "menor": 60,
     "restringido": 4,
     "mayor": 3,
     "colapso": 1,
@@ -314,7 +314,7 @@
    ],
    [
     "2026-11-02",
-    595
+    598
    ]
   ],
   "lluvias": [
