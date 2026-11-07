@@ -94,14 +94,15 @@
 
   // ---------- columnas por semana (SVG), con la tabla
   function columnas(cont, serie, tablaCont) {
-    const W = 640, H = 250, ml = 44, mr = 8, mt = 22, mb = 30, iw = W - ml - mr, ih = H - mt - mb;
+    // se dibuja al ancho real de su caja (sin escalar): así las letras quedan siempre del tamaño que se ve en la pantalla
+    const W = Math.max(300, Math.round(cont.clientWidth || 640)), H = W < 520 ? 280 : 310, ml = 60, mr = 8, mt = 32, mb = 42, iw = W - ml - mr, ih = H - mt - mb;
     const max = Math.max(...serie.map(x => x[1]), 1), paso = Math.pow(10, Math.floor(Math.log10(max))), tope = Math.ceil(max / paso) * paso;
-    const ticks = [0, tope / 2, tope], band = iw / serie.length, bw = Math.min(24, band * .55);
-    const g = s('svg', { viewBox: `0 0 ${W} ${H}`, class: 'grafica', role: 'img', 'aria-label': 'Inmuebles valorados por semana: ' + serie.map(x => diaCorto(x[0]) + ' ' + fmt(x[1])).join('; ') });
+    const ticks = [0, tope / 2, tope], band = iw / serie.length, bw = Math.min(30, band * .6), cada = band >= 64 ? 1 : 2;
+    const g = s('svg', { viewBox: `0 0 ${W} ${H}`, width: W, height: H, class: 'grafica', role: 'img', 'aria-label': 'Inmuebles valorados por semana: ' + serie.map(x => diaCorto(x[0]) + ' ' + fmt(x[1])).join('; ') });
     for (const t of ticks) {
       const y = mt + ih - ih * t / tope;
       g.append(s('line', { x1: ml, x2: W - mr, y1: y, y2: y, class: t ? 'rejilla-l' : 'base-l' }));
-      const tx = s('text', { x: ml - 8, y: y + 4, 'text-anchor': 'end' }); tx.textContent = t >= 10000 ? fmt(t / 1000) + ' mil' : fmt(t); g.append(tx);
+      const tx = s('text', { x: ml - 10, y: y + 5, 'text-anchor': 'end' }); tx.textContent = t >= 10000 ? fmt(t / 1000) + ' mil' : fmt(t); g.append(tx);
     }
     const iMax = serie.findIndex(x => x[1] === max), ultima = serie.length - 1;
     serie.forEach(([sem, n], i) => {
@@ -115,10 +116,11 @@
       zona.addEventListener('pointerenter', () => col.classList.add('on')); zona.addEventListener('pointerleave', () => col.classList.remove('on'));
       zona.addEventListener('focus', () => col.classList.add('on')); zona.addEventListener('blur', () => col.classList.remove('on'));
       g.append(col, zona);
-      const lx = s('text', { x: ml + band * i + band / 2, y: H - 10, 'text-anchor': 'middle' }); lx.textContent = diaCorto(sem); g.append(lx);
-      if (i === iMax || i === ultima) { const v = s('text', { x: x + bw / 2, y: y - 6, 'text-anchor': 'middle', class: 'valor' }); v.textContent = fmt(n); g.append(v); }
+      if ((ultima - i) % cada === 0) { const lx = s('text', { x: ml + band * i + band / 2, y: H - 12, 'text-anchor': 'middle' }); lx.textContent = diaCorto(sem); g.append(lx); }
+      if (i === iMax || i === ultima) { const v = s('text', { x: x + bw / 2, y: y - 9, 'text-anchor': 'middle', class: 'valor' }); v.textContent = fmt(n); g.append(v); }
     });
     cont.replaceChildren(g);
+    cont.__ancho = W; cont.__redibuja = () => columnas(cont, serie, null);
     if (tablaCont) tablaCont.replaceChildren(h('table', {}, h('thead', {}, h('tr', {}, h('th', {}, 'Semana'), h('th', {}, 'Inmuebles valorados'))),
       h('tbody', {}, serie.map(([sem, n]) => h('tr', {}, h('td', {}, 'Del ' + diaCorto(sem)), h('td', {}, fmt(n))))),
       h('tfoot', {}, h('tr', {}, h('td', {}, 'Total'), h('td', {}, fmt(serie.reduce((a, x) => a + x[1], 0)))))));
@@ -176,7 +178,7 @@
     columnas($('#g-semanas'), C.semanas.inmuebles, $('#t-semanas'));
     dato('ingenieros', fmt(C.equipo.ingenieros));
     dato('ingenieros-exp', `Del ${fechaLarga(C.equipo.desde)} al ${fechaLarga(C.equipo.hasta)}.`);
-    const tipos = $('[data-dato="tipos"]'); tipos.replaceChildren(fmt(I.edificios), h('small', {}, ' en edificios · '), fmt(I.casas), h('small', {}, ' casas'));
+    const tipos = $('[data-dato="tipos"]'); tipos.replaceChildren(fmt(I.edificios), h('small', {}, ' en edificios'), h('br'), fmt(I.casas), h('small', {}, ' casas'));
 
     // 4 · resultados
     dato('resultados-total', `${fmt(T)} inmuebles valorados`);
@@ -253,9 +255,9 @@
       p.addEventListener('focus', e => muestra(e, `Comuna ${c.num} · ${c.nombre}`, textoDe(c, METRICA)));
       p.addEventListener('blur', esconde);
       capaP.append(p);
-      const t = s('text', { x: z.x, y: -z.y + 3, 'text-anchor': 'middle', class: 'rot', 'data-c': z.clave }); t.textContent = c.num; capaR.append(t);
+      const t = s('text', { x: z.x, y: -z.y, 'text-anchor': 'middle', 'dominant-baseline': 'central', class: 'rot', 'data-c': z.clave }); t.textContent = c.num; capaR.append(t);
     }
-    g.append(capaP, capaR); caja.replaceChildren(g);
+    g.append(capaP, capaR); caja.replaceChildren(g); rotulos();
     $$('#metricas button').forEach(b => b.addEventListener('click', () => { METRICA = b.dataset.m; $$('#metricas button').forEach(x => x.setAttribute('aria-pressed', String(x === b))); colorea(); }));
     colorea();
     elige(SEL || [...cs].sort((a, b) => b.inmuebles - a.inmuebles)[0].clave);
@@ -287,6 +289,18 @@
     $('#escala').replaceChildren(h('span', {}, 'Menos'), tramos, h('span', {}, 'Más'), h('span', {}, `· tramos: ${br.map(f).join(', ')}`),
       METRICA !== 'n' ? h('span', {}, h('span', { class: 'rayas' }), '') : null, METRICA !== 'n' ? h('span', {}, `Menos de ${MIN_N} inmuebles valorados`) : null);
   }
+  // los números de las comunas, a 16 px en la pantalla sea cual sea el ancho del mapa
+  function rotulos() {
+    const svg = $('#mapa svg'); if (!svg || !GEO) return;
+    const k = (GEO.w + 8) / Math.max(1, svg.getBoundingClientRect().width);
+    $$('#mapa .rot').forEach(t => { t.setAttribute('font-size', (16 * k).toFixed(2)); t.setAttribute('stroke-width', (3 * k).toFixed(2)); });
+  }
+  // al cambiar el ancho de la pantalla se redibujan las columnas y se ajustan los rótulos del mapa
+  let reloj = null;
+  addEventListener('resize', () => { clearTimeout(reloj); reloj = setTimeout(() => {
+    const g = $('#g-semanas'); if (g && g.__redibuja && Math.abs(g.clientWidth - g.__ancho) > 4) g.__redibuja();
+    rotulos();
+  }, 150); });
   function elige(clave) {
     SEL = clave;
     $$('#mapa path').forEach(p => p.classList.toggle('on', p.dataset.c === clave));
