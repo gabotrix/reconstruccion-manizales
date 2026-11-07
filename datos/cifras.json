@@ -1,35 +1,35 @@
 {
- "corte": "2026-11-07T04:07:50.238Z",
+ "corte": "2026-11-07T16:18:23.367Z",
  "equipo": {
   "ingenieros": 36,
   "desde": "2026-09-18",
-  "hasta": "2026-11-06"
+  "hasta": "2026-11-07"
  },
  "inmuebles": {
-  "total": 4480,
-  "edificios": 3491,
-  "casas": 989,
+  "total": 4483,
+  "edificios": 3492,
+  "casas": 991,
   "por_categoria": {
-   "sin_dano": 1608,
-   "menor": 1167,
+   "sin_dano": 1609,
+   "menor": 1168,
    "restringido": 218,
-   "mayor": 594,
+   "mayor": 590,
    "colapso": 35,
-   "seguro": 633,
+   "seguro": 638,
    "sin_acceso": 225
   }
  },
  "arp": {
-  "requieren": 1979,
-  "no_requieren": 2241,
-  "con_presupuesto": 981,
-  "crr": 9744460266,
-  "costos_directos": 8775270119,
+  "requieren": 1976,
+  "no_requieren": 2247,
+  "con_presupuesto": 982,
+  "crr": 9749077273,
+  "costos_directos": 8779752650,
   "por_categoria": {
    "menor": {
-    "inmuebles": 1167,
-    "con_presupuesto": 596,
-    "crr": 3393405428
+    "inmuebles": 1168,
+    "con_presupuesto": 597,
+    "crr": 3397889528
    },
    "restringido": {
     "inmuebles": 218,
@@ -37,15 +37,15 @@
     "crr": 1066202017
    },
    "mayor": {
-    "inmuebles": 594,
+    "inmuebles": 590,
     "con_presupuesto": 275,
-    "crr": 5284852821
+    "crr": 5284985728
    }
   },
   "revision": {
    "verificado": 36,
    "en_revision": 25,
-   "sin_revisar": 920
+   "sin_revisar": 921
   }
  },
  "comunas": [
@@ -87,16 +87,16 @@
    "clave": "03 · Cumanday",
    "num": 3,
    "nombre": "Cumanday",
-   "inmuebles": 669,
-   "no_habitables": 134,
-   "arp": 335,
+   "inmuebles": 672,
+   "no_habitables": 130,
+   "arp": 332,
    "cats": {
-    "sin_dano": 192,
-    "menor": 176,
+    "sin_dano": 193,
+    "menor": 177,
     "restringido": 34,
-    "mayor": 125,
+    "mayor": 121,
     "colapso": 9,
-    "seguro": 104,
+    "seguro": 109,
     "sin_acceso": 29
    }
   },
@@ -314,7 +314,7 @@
    ],
    [
     "2026-11-02",
-    598
+    601
    ]
   ],
   "lluvias": [
