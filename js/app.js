@@ -149,7 +149,7 @@
     const corte = new Date(C.corte);
     const corteTxt = corte.toLocaleDateString('es-CO', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'America/Bogota' }) + ', ' +
       corte.toLocaleTimeString('es-CO', { hour: 'numeric', minute: '2-digit', timeZone: 'America/Bogota' });
-    dato('corte', corteTxt); dato('corte-largo', 'Última actualización: ' + corteTxt + '.');
+    dato('corte', corteTxt); dato('corte-largo', 'Última actualización: ' + corteTxt + (/\.$/.test(corteTxt) ? '' : '.'));
     const I = C.inmuebles, T = I.total, P = I.por_categoria, NOH = P.mayor + P.colapso, AF = C.afectados.niveles.reduce((a, x) => a + x[1], 0);
 
     // 1 · lo esencial
@@ -315,7 +315,10 @@
   }
 
   // ---------- los datos
-  Promise.all(['datos/cifras.json', 'datos/comunas.json'].map(u => fetch(u, { cache: 'no-cache' }).then(r => { if (!r.ok) throw new Error(u + ': ' + r.status); return r.json(); })))
+  // en la vista previa de un solo archivo las cifras vienen dentro de la página (<script type="application/json">)
+  const lee = (u, id) => { const e = document.getElementById(id); if (e) return Promise.resolve(JSON.parse(e.textContent));
+    return fetch(u, { cache: 'no-cache' }).then(r => { if (!r.ok) throw new Error(u + ': ' + r.status); return r.json(); }); };
+  Promise.all([lee('datos/cifras.json', 'datos-cifras'), lee('datos/comunas.json', 'datos-comunas')])
     .then(([c, g]) => { DATOS = c; GEO = g; pinta(c); })
     .catch(e => { console.error(e); $('#kpis').replaceChildren(h('p', { class: 'error-datos' }, 'No se pudieron cargar las cifras. Intente de nuevo en unos minutos.')); });
 })();
