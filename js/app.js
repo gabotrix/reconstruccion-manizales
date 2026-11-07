@@ -194,15 +194,15 @@
     $('#kpis-arp').replaceChildren(
       cifra('Requieren ARP', fmt(A.requieren), 'Daño menor, uso restringido y daño mayor.', 'llave'),
       cifra('Ya tienen presupuesto de obra', fmt(A.con_presupuesto), `${pct(A.con_presupuesto, A.requieren)} de los que requieren ARP.`, 'lupa'),
-      cifra('Costo estimado de reparación', [millones(A.crr), h('small', {}, ' millones')], `De los ${fmt(A.con_presupuesto)} con presupuesto de obra.`, 'pesos'),
-      cifra('Costo promedio por inmueble', ['$ ' + (A.crr / Math.max(1, A.con_presupuesto) / 1e6).toLocaleString('es-CO', { maximumFractionDigits: 1 }), h('small', {}, ' millones')], 'Con la lista de precios vigente de la Alcaldía.', 'casa'));
+      cifra('Costo estimado de reparación', [millones(A.crr), h('small', { class: 'unidad' }, 'millones de pesos')], `De los ${fmt(A.con_presupuesto)} con presupuesto de obra.`, 'pesos'),
+      cifra('Costo promedio por inmueble', ['$ ' + (A.crr / Math.max(1, A.con_presupuesto) / 1e6).toLocaleString('es-CO', { maximumFractionDigits: 1 }), h('small', { class: 'unidad' }, 'millones de pesos')], 'Con la lista de precios vigente de la Alcaldía.', 'casa'));
     const R = A.revision;
     dato('revision-sub', `Los ${fmt(A.con_presupuesto)} presupuestos de obra, según su revisión`);
     segmentos($('#g-revision'), [{ l: 'Verificado', n: R.verificado, c: '--r5' }, { l: 'En revisión', n: R.en_revision, c: '--r3' }, { l: 'Sin revisar', n: R.sin_revisar, c: '--r1', oscuro: true }], 'presupuestos');
     const K = ['menor', 'restringido', 'mayor'];
-    $('#t-arp').replaceChildren(h('table', {}, h('thead', {}, h('tr', {}, h('th', {}, 'Tipo de daño'), h('th', {}, 'Inmuebles'), h('th', {}, 'Con presupuesto'), h('th', {}, 'Costo estimado'))),
-      h('tbody', {}, K.map(k => { const x = A.por_categoria[k]; return h('tr', {}, h('td', {}, CAT[k].l), h('td', {}, fmt(x.inmuebles)), h('td', {}, fmt(x.con_presupuesto)), h('td', {}, millones(x.crr) + ' M')); })),
-      h('tfoot', {}, h('tr', {}, h('td', {}, 'Total'), h('td', {}, fmt(A.requieren)), h('td', {}, fmt(A.con_presupuesto)), h('td', {}, millones(A.crr) + ' M')))));
+    $('#t-arp').replaceChildren(h('table', {}, h('thead', {}, h('tr', {}, h('th', {}, 'Tipo de daño'), h('th', {}, 'Inmuebles'), h('th', {}, 'Con presupuesto'), h('th', {}, 'Costo estimado (millones de pesos)'))),
+      h('tbody', {}, K.map(k => { const x = A.por_categoria[k]; return h('tr', {}, h('td', {}, CAT[k].l), h('td', {}, fmt(x.inmuebles)), h('td', {}, fmt(x.con_presupuesto)), h('td', {}, millones(x.crr))); })),
+      h('tfoot', {}, h('tr', {}, h('td', {}, 'Total'), h('td', {}, fmt(A.requieren)), h('td', {}, fmt(A.con_presupuesto)), h('td', {}, millones(A.crr))))));
 
     // 7 · demoliciones
     const D = C.demoliciones;
@@ -210,7 +210,7 @@
       cifra('Expedientes de demolición', fmt(D.expedientes), 'Del programa de demoliciones de la ciudad.', 'mazo'),
       cifra('Ya demolidos', fmt(D.demolidas), `${fmt(D.por_municipio)} por el municipio y ${fmt(D.por_particular)} por particulares.`, 'casa'),
       cifra('En proceso', fmt(D.expedientes - D.demolidas), 'Entre la solicitud y la obra.', 'lupa'),
-      cifra('Valor estimado', [millones(D.valor_estimado), h('small', {}, ' millones')], 'Suma del valor estimado de los expedientes que ya lo tienen.', 'pesos'));
+      cifra('Valor estimado', [millones(D.valor_estimado), h('small', { class: 'unidad' }, 'millones de pesos')], 'Suma del valor estimado de los expedientes que ya lo tienen.', 'pesos'));
     barras($('#g-fases'), D.fases.map((f, i) => ({ l: f.l, n: f.n, c: RAMPA[i], unidad: 'expedientes' })), { total: D.expedientes });
     const ORD_CL = ['Demolición total de vivienda', 'Demolición total de edificio', 'Demolición parcial', 'Por definir'];
     barras($('#g-clas'), [...D.clasificacion].sort((a, b) => ORD_CL.indexOf(a.l) - ORD_CL.indexOf(b.l)).map(x => ({ l: x.l, n: x.n, c: x.l === 'Por definir' ? '--gris-dato' : '--r4', unidad: 'expedientes' })), { total: D.expedientes });

@@ -85,6 +85,7 @@ section.bloque { padding: 64px 0 8px; }
 .cifra .etq { font-size: 17.5px; color: var(--texto); font-weight: 600; padding-right: 48px; }
 .cifra .val { font-size: clamp(38px, 3.8vw, 48px); font-weight: 700; color: var(--azul); line-height: 1.05; letter-spacing: -.02em; }
 .cifra .val br + * { margin-top: 4px; }
+.cifra .val small.unidad { display: block; margin-top: 6px; letter-spacing: 0; }
 .cifra .val small { font-size: max(19px, .45em); font-weight: 600; color: var(--suave); letter-spacing: 0; }
 .cifra .exp { font-size: 16.5px; color: var(--suave); }
 .cifra .icono { position: absolute; top: 18px; right: 18px; width: 36px; height: 36px; border-radius: 10px; display: grid; place-items: center; background: #eef3fb; color: var(--azul-2); }
