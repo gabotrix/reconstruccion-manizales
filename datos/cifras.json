@@ -1,0 +1,433 @@
+{
+ "corte": "2026-11-07T01:10:29.732Z",
+ "equipo": {
+  "ingenieros": 36,
+  "desde": "2026-09-18",
+  "hasta": "2026-11-06"
+ },
+ "inmuebles": {
+  "total": 4477,
+  "edificios": 3491,
+  "casas": 986,
+  "por_categoria": {
+   "sin_dano": 1607,
+   "menor": 1166,
+   "restringido": 218,
+   "mayor": 593,
+   "colapso": 35,
+   "seguro": 633,
+   "sin_acceso": 225
+  }
+ },
+ "arp": {
+  "requieren": 1977,
+  "no_requieren": 2240,
+  "con_presupuesto": 980,
+  "crr": 9645821647,
+  "costos_directos": 8689584473,
+  "por_categoria": {
+   "menor": {
+    "inmuebles": 1166,
+    "con_presupuesto": 595,
+    "crr": 3392422955
+   },
+   "restringido": {
+    "inmuebles": 218,
+    "con_presupuesto": 110,
+    "crr": 1066202017
+   },
+   "mayor": {
+    "inmuebles": 593,
+    "con_presupuesto": 275,
+    "crr": 5187196675
+   }
+  },
+  "revision": {
+   "verificado": 36,
+   "en_revision": 25,
+   "sin_revisar": 919
+  }
+ },
+ "comunas": [
+  {
+   "clave": "01 · Atardeceres",
+   "num": 1,
+   "nombre": "Atardeceres",
+   "inmuebles": 1058,
+   "no_habitables": 63,
+   "arp": 266,
+   "cats": {
+    "sin_dano": 347,
+    "menor": 191,
+    "restringido": 12,
+    "mayor": 63,
+    "colapso": 0,
+    "seguro": 367,
+    "sin_acceso": 78
+   }
+  },
+  {
+   "clave": "02 · San José",
+   "num": 2,
+   "nombre": "San José",
+   "inmuebles": 260,
+   "no_habitables": 31,
+   "arp": 75,
+   "cats": {
+    "sin_dano": 84,
+    "menor": 40,
+    "restringido": 7,
+    "mayor": 28,
+    "colapso": 3,
+    "seguro": 88,
+    "sin_acceso": 10
+   }
+  },
+  {
+   "clave": "03 · Cumanday",
+   "num": 3,
+   "nombre": "Cumanday",
+   "inmuebles": 669,
+   "no_habitables": 134,
+   "arp": 335,
+   "cats": {
+    "sin_dano": 192,
+    "menor": 176,
+    "restringido": 34,
+    "mayor": 125,
+    "colapso": 9,
+    "seguro": 104,
+    "sin_acceso": 29
+   }
+  },
+  {
+   "clave": "04 · Estación",
+   "num": 4,
+   "nombre": "Estación",
+   "inmuebles": 500,
+   "no_habitables": 78,
+   "arp": 301,
+   "cats": {
+    "sin_dano": 168,
+    "menor": 183,
+    "restringido": 40,
+    "mayor": 78,
+    "colapso": 0,
+    "seguro": 0,
+    "sin_acceso": 31
+   }
+  },
+  {
+   "clave": "05 · Ciudadela Del Norte",
+   "num": 5,
+   "nombre": "Ciudadela del Norte",
+   "inmuebles": 52,
+   "no_habitables": 2,
+   "arp": 33,
+   "cats": {
+    "sin_dano": 15,
+    "menor": 30,
+    "restringido": 1,
+    "mayor": 2,
+    "colapso": 0,
+    "seguro": 1,
+    "sin_acceso": 3
+   }
+  },
+  {
+   "clave": "06 · Ecoturístico Cerro De Oro",
+   "num": 6,
+   "nombre": "Ecoturístico Cerro de Oro",
+   "inmuebles": 574,
+   "no_habitables": 17,
+   "arp": 139,
+   "cats": {
+    "sin_dano": 336,
+    "menor": 110,
+    "restringido": 12,
+    "mayor": 17,
+    "colapso": 0,
+    "seguro": 61,
+    "sin_acceso": 38
+   }
+  },
+  {
+   "clave": "07 · Tesorito",
+   "num": 7,
+   "nombre": "Tesorito",
+   "inmuebles": 24,
+   "no_habitables": 1,
+   "arp": 24,
+   "cats": {
+    "sin_dano": 0,
+    "menor": 23,
+    "restringido": 0,
+    "mayor": 1,
+    "colapso": 0,
+    "seguro": 0,
+    "sin_acceso": 0
+   }
+  },
+  {
+   "clave": "08 · Palogrande",
+   "num": 8,
+   "nombre": "Palogrande",
+   "inmuebles": 684,
+   "no_habitables": 129,
+   "arp": 418,
+   "cats": {
+    "sin_dano": 239,
+    "menor": 231,
+    "restringido": 60,
+    "mayor": 127,
+    "colapso": 2,
+    "seguro": 9,
+    "sin_acceso": 16
+   }
+  },
+  {
+   "clave": "09 · Universitaria",
+   "num": 9,
+   "nombre": "Universitaria",
+   "inmuebles": 3,
+   "no_habitables": 1,
+   "arp": 2,
+   "cats": {
+    "sin_dano": 1,
+    "menor": 0,
+    "restringido": 1,
+    "mayor": 1,
+    "colapso": 0,
+    "seguro": 0,
+    "sin_acceso": 0
+   }
+  },
+  {
+   "clave": "10 · La Fuente",
+   "num": 10,
+   "nombre": "La Fuente",
+   "inmuebles": 117,
+   "no_habitables": 21,
+   "arp": 50,
+   "cats": {
+    "sin_dano": 65,
+    "menor": 27,
+    "restringido": 3,
+    "mayor": 20,
+    "colapso": 1,
+    "seguro": 0,
+    "sin_acceso": 1
+   }
+  },
+  {
+   "clave": "11 · La Macarena",
+   "num": 11,
+   "nombre": "La Macarena",
+   "inmuebles": 315,
+   "no_habitables": 90,
+   "arp": 168,
+   "cats": {
+    "sin_dano": 124,
+    "menor": 73,
+    "restringido": 10,
+    "mayor": 85,
+    "colapso": 5,
+    "seguro": 3,
+    "sin_acceso": 15
+   }
+  },
+  {
+   "clave": "12 · Nuevo Horizonte",
+   "num": 12,
+   "nombre": "Nuevo Horizonte",
+   "inmuebles": 94,
+   "no_habitables": 4,
+   "arp": 66,
+   "cats": {
+    "sin_dano": 23,
+    "menor": 59,
+    "restringido": 4,
+    "mayor": 3,
+    "colapso": 1,
+    "seguro": 0,
+    "sin_acceso": 4
+   }
+  }
+ ],
+ "rural": {
+  "inmuebles": 124,
+  "no_habitables": 56,
+  "arp": 98,
+  "cats": {
+   "sin_dano": 12,
+   "menor": 22,
+   "restringido": 34,
+   "mayor": 42,
+   "colapso": 14,
+   "seguro": 0,
+   "sin_acceso": 0
+  }
+ },
+ "sin_ubicar": {
+  "inmuebles": 3,
+  "no_habitables": 1,
+  "arp": 2,
+  "cats": {
+   "sin_dano": 1,
+   "menor": 1,
+   "restringido": 0,
+   "mayor": 1,
+   "colapso": 0,
+   "seguro": 0,
+   "sin_acceso": 0
+  }
+ },
+ "semanas": {
+  "inmuebles": [
+   [
+    "2026-09-14",
+    23
+   ],
+   [
+    "2026-09-21",
+    327
+   ],
+   [
+    "2026-09-28",
+    483
+   ],
+   [
+    "2026-10-05",
+    334
+   ],
+   [
+    "2026-10-12",
+    583
+   ],
+   [
+    "2026-10-19",
+    488
+   ],
+   [
+    "2026-10-26",
+    1644
+   ],
+   [
+    "2026-11-02",
+    595
+   ]
+  ],
+  "lluvias": [
+   [
+    "2026-10-05",
+    155
+   ],
+   [
+    "2026-10-12",
+    10
+   ],
+   [
+    "2026-10-19",
+    7
+   ],
+   [
+    "2026-10-26",
+    2
+   ],
+   [
+    "2026-11-02",
+    33
+   ]
+  ]
+ },
+ "lluvias": {
+  "visitas": 207,
+  "predios_por_riesgo": {
+   "inminente": 4,
+   "alto": 22,
+   "medio": 19,
+   "bajo": 19,
+   "sin": 41
+  }
+ },
+ "afectados": {
+  "fuente": "registros de la Alcaldía de Manizales",
+  "fecha": "2026-11-05",
+  "niveles": [
+   [
+    "Impacto alto",
+    1785
+   ],
+   [
+    "Impacto medio",
+    2433
+   ],
+   [
+    "Impacto bajo",
+    5790
+   ],
+   [
+    "Reconstrucción",
+    1505
+   ]
+  ]
+ },
+ "familias": {
+  "registros": 9994,
+  "viviendas": 7801,
+  "personas": 13139
+ },
+ "demoliciones": {
+  "expedientes": 338,
+  "demolidas": 52,
+  "por_municipio": 45,
+  "por_particular": 7,
+  "fases": [
+   {
+    "k": "solicitud",
+    "l": "Solicitud y visita técnica",
+    "n": 237
+   },
+   {
+    "k": "validacion",
+    "l": "Validación y declaratoria de ruina",
+    "n": 17
+   },
+   {
+    "k": "comite",
+    "l": "Aprobación del Comité del Fondo",
+    "n": 26
+   },
+   {
+    "k": "obra",
+    "l": "Contratación y obra",
+    "n": 6
+   },
+   {
+    "k": "terminada",
+    "l": "Demolición terminada",
+    "n": 52
+   }
+  ],
+  "sin_etapa": 0,
+  "clasificacion": [
+   {
+    "l": "Demolición parcial",
+    "n": 38
+   },
+   {
+    "l": "Por definir",
+    "n": 177
+   },
+   {
+    "l": "Demolición total de edificio",
+    "n": 21
+   },
+   {
+    "l": "Demolición total de vivienda",
+    "n": 102
+   }
+  ],
+  "valor_estimado": 31266841565
+ }
+}
