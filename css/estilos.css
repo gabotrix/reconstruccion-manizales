@@ -249,3 +249,6 @@ tfoot td { font-weight: 700; border-bottom: 0; }
   table { font-size: 16.5px; }
 }
 @media print { .barra, .menu, .portada .acciones { display: none; } .portada { background: var(--azul); } }
+
+/* la línea de emergencias en la sección del ciudadano */
+.ayuda .linea { display: inline-block; background: #fdeaea; color: #8a1f1f; border-radius: 8px; padding: 6px 12px; font-size: 17px; font-weight: 700; margin-top: auto; }
