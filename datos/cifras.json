@@ -1,51 +1,51 @@
 {
- "corte": "2026-11-07T16:18:23.367Z",
+ "corte": "2026-11-09T14:24:46.279Z",
  "equipo": {
   "ingenieros": 36,
   "desde": "2026-09-18",
-  "hasta": "2026-11-07"
+  "hasta": "2026-11-09"
  },
  "inmuebles": {
-  "total": 4483,
-  "edificios": 3492,
-  "casas": 991,
+  "total": 4596,
+  "edificios": 3588,
+  "casas": 1008,
   "por_categoria": {
-   "sin_dano": 1609,
-   "menor": 1168,
-   "restringido": 218,
-   "mayor": 590,
+   "sin_dano": 1662,
+   "menor": 1192,
+   "restringido": 219,
+   "mayor": 601,
    "colapso": 35,
-   "seguro": 638,
-   "sin_acceso": 225
+   "seguro": 661,
+   "sin_acceso": 226
   }
  },
  "arp": {
-  "requieren": 1976,
-  "no_requieren": 2247,
-  "con_presupuesto": 982,
-  "crr": 9749077273,
-  "costos_directos": 8779752650,
+  "requieren": 2012,
+  "no_requieren": 2323,
+  "con_presupuesto": 1078,
+  "crr": 11256278713,
+  "costos_directos": 10123383326,
   "por_categoria": {
    "menor": {
-    "inmuebles": 1168,
-    "con_presupuesto": 597,
-    "crr": 3397889528
+    "inmuebles": 1192,
+    "con_presupuesto": 643,
+    "crr": 3729368332
    },
    "restringido": {
-    "inmuebles": 218,
-    "con_presupuesto": 110,
-    "crr": 1066202017
+    "inmuebles": 219,
+    "con_presupuesto": 123,
+    "crr": 1206444653
    },
    "mayor": {
-    "inmuebles": 590,
-    "con_presupuesto": 275,
-    "crr": 5284985728
+    "inmuebles": 601,
+    "con_presupuesto": 312,
+    "crr": 6320465728
    }
   },
   "revision": {
-   "verificado": 36,
-   "en_revision": 25,
-   "sin_revisar": 921
+   "verificado": 38,
+   "en_revision": 27,
+   "sin_revisar": 1013
   }
  },
  "comunas": [
@@ -53,14 +53,14 @@
    "clave": "01 · Atardeceres",
    "num": 1,
    "nombre": "Atardeceres",
-   "inmuebles": 1058,
-   "no_habitables": 63,
-   "arp": 266,
+   "inmuebles": 1071,
+   "no_habitables": 64,
+   "arp": 279,
    "cats": {
     "sin_dano": 347,
-    "menor": 191,
+    "menor": 203,
     "restringido": 12,
-    "mayor": 63,
+    "mayor": 64,
     "colapso": 0,
     "seguro": 367,
     "sin_acceso": 78
@@ -87,16 +87,16 @@
    "clave": "03 · Cumanday",
    "num": 3,
    "nombre": "Cumanday",
-   "inmuebles": 672,
-   "no_habitables": 130,
-   "arp": 332,
+   "inmuebles": 707,
+   "no_habitables": 129,
+   "arp": 335,
    "cats": {
-    "sin_dano": 193,
-    "menor": 177,
-    "restringido": 34,
-    "mayor": 121,
+    "sin_dano": 202,
+    "menor": 180,
+    "restringido": 35,
+    "mayor": 120,
     "colapso": 9,
-    "seguro": 109,
+    "seguro": 132,
     "sin_acceso": 29
    }
   },
@@ -138,11 +138,11 @@
    "clave": "06 · Ecoturístico Cerro De Oro",
    "num": 6,
    "nombre": "Ecoturístico Cerro de Oro",
-   "inmuebles": 574,
+   "inmuebles": 575,
    "no_habitables": 17,
    "arp": 139,
    "cats": {
-    "sin_dano": 336,
+    "sin_dano": 337,
     "menor": 110,
     "restringido": 12,
     "mayor": 17,
@@ -172,14 +172,14 @@
    "clave": "08 · Palogrande",
    "num": 8,
    "nombre": "Palogrande",
-   "inmuebles": 684,
-   "no_habitables": 129,
-   "arp": 418,
+   "inmuebles": 693,
+   "no_habitables": 135,
+   "arp": 426,
    "cats": {
-    "sin_dano": 239,
-    "menor": 231,
-    "restringido": 60,
-    "mayor": 127,
+    "sin_dano": 240,
+    "menor": 234,
+    "restringido": 59,
+    "mayor": 133,
     "colapso": 2,
     "seguro": 9,
     "sin_acceso": 16
@@ -189,14 +189,14 @@
    "clave": "09 · Universitaria",
    "num": 9,
    "nombre": "Universitaria",
-   "inmuebles": 3,
-   "no_habitables": 1,
-   "arp": 2,
+   "inmuebles": 4,
+   "no_habitables": 2,
+   "arp": 3,
    "cats": {
     "sin_dano": 1,
     "menor": 0,
     "restringido": 1,
-    "mayor": 1,
+    "mayor": 2,
     "colapso": 0,
     "seguro": 0,
     "sin_acceso": 0
@@ -223,14 +223,14 @@
    "clave": "11 · La Macarena",
    "num": 11,
    "nombre": "La Macarena",
-   "inmuebles": 316,
-   "no_habitables": 91,
-   "arp": 169,
+   "inmuebles": 317,
+   "no_habitables": 90,
+   "arp": 170,
    "cats": {
     "sin_dano": 124,
-    "menor": 73,
-    "restringido": 10,
-    "mayor": 86,
+    "menor": 74,
+    "restringido": 11,
+    "mayor": 85,
     "colapso": 5,
     "seguro": 3,
     "sin_acceso": 15
@@ -240,29 +240,29 @@
    "clave": "12 · Nuevo Horizonte",
    "num": 12,
    "nombre": "Nuevo Horizonte",
-   "inmuebles": 96,
+   "inmuebles": 142,
    "no_habitables": 4,
-   "arp": 67,
+   "arp": 70,
    "cats": {
-    "sin_dano": 24,
-    "menor": 60,
+    "sin_dano": 66,
+    "menor": 63,
     "restringido": 4,
     "mayor": 3,
     "colapso": 1,
     "seguro": 0,
-    "sin_acceso": 4
+    "sin_acceso": 5
    }
   }
  ],
  "rural": {
-  "inmuebles": 124,
-  "no_habitables": 56,
-  "arp": 98,
+  "inmuebles": 131,
+  "no_habitables": 61,
+  "arp": 105,
   "cats": {
    "sin_dano": 12,
-   "menor": 22,
+   "menor": 24,
    "restringido": 34,
-   "mayor": 42,
+   "mayor": 47,
    "colapso": 14,
    "seguro": 0,
    "sin_acceso": 0
@@ -314,7 +314,11 @@
    ],
    [
     "2026-11-02",
-    601
+    711
+   ],
+   [
+    "2026-11-09",
+    3
    ]
   ],
   "lluvias": [
@@ -378,7 +382,7 @@
   "personas": 13139
  },
  "demoliciones": {
-  "expedientes": 338,
+  "expedientes": 339,
   "demolidas": 52,
   "por_municipio": 45,
   "por_particular": 7,
@@ -386,7 +390,7 @@
    {
     "k": "solicitud",
     "l": "Solicitud y visita técnica",
-    "n": 237
+    "n": 238
    },
    {
     "k": "validacion",
@@ -417,7 +421,7 @@
    },
    {
     "l": "Por definir",
-    "n": 177
+    "n": 178
    },
    {
     "l": "Demolición total de edificio",
@@ -428,6 +432,6 @@
     "n": 102
    }
   ],
-  "valor_estimado": 31266841565
+  "valor_estimado": 31266841579
  }
 }
