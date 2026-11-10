@@ -1,51 +1,51 @@
 {
- "corte": "2026-11-09T14:24:46.279Z",
+ "corte": "2026-11-10T11:09:57.314Z",
  "equipo": {
   "ingenieros": 36,
   "desde": "2026-09-18",
   "hasta": "2026-11-09"
  },
  "inmuebles": {
-  "total": 4596,
-  "edificios": 3588,
-  "casas": 1008,
+  "total": 4656,
+  "edificios": 3635,
+  "casas": 1021,
   "por_categoria": {
-   "sin_dano": 1662,
-   "menor": 1192,
-   "restringido": 219,
-   "mayor": 601,
+   "sin_dano": 1686,
+   "menor": 1213,
+   "restringido": 209,
+   "mayor": 624,
    "colapso": 35,
-   "seguro": 661,
-   "sin_acceso": 226
+   "seguro": 657,
+   "sin_acceso": 232
   }
  },
  "arp": {
-  "requieren": 2012,
-  "no_requieren": 2323,
-  "con_presupuesto": 1078,
-  "crr": 11256278713,
-  "costos_directos": 10123383326,
+  "requieren": 2046,
+  "no_requieren": 2343,
+  "con_presupuesto": 1157,
+  "crr": 13557203942,
+  "costos_directos": 12145925697,
   "por_categoria": {
    "menor": {
-    "inmuebles": 1192,
-    "con_presupuesto": 643,
-    "crr": 3729368332
+    "inmuebles": 1213,
+    "con_presupuesto": 677,
+    "crr": 3963177719
    },
    "restringido": {
-    "inmuebles": 219,
-    "con_presupuesto": 123,
-    "crr": 1206444653
+    "inmuebles": 209,
+    "con_presupuesto": 128,
+    "crr": 1293642339
    },
    "mayor": {
-    "inmuebles": 601,
-    "con_presupuesto": 312,
-    "crr": 6320465728
+    "inmuebles": 624,
+    "con_presupuesto": 352,
+    "crr": 8300383884
    }
   },
   "revision": {
-   "verificado": 38,
-   "en_revision": 27,
-   "sin_revisar": 1013
+   "verificado": 49,
+   "en_revision": 25,
+   "sin_revisar": 1083
   }
  },
  "comunas": [
@@ -53,14 +53,14 @@
    "clave": "01 · Atardeceres",
    "num": 1,
    "nombre": "Atardeceres",
-   "inmuebles": 1071,
-   "no_habitables": 64,
-   "arp": 279,
+   "inmuebles": 1075,
+   "no_habitables": 66,
+   "arp": 283,
    "cats": {
     "sin_dano": 347,
-    "menor": 203,
+    "menor": 205,
     "restringido": 12,
-    "mayor": 64,
+    "mayor": 66,
     "colapso": 0,
     "seguro": 367,
     "sin_acceso": 78
@@ -87,14 +87,14 @@
    "clave": "03 · Cumanday",
    "num": 3,
    "nombre": "Cumanday",
-   "inmuebles": 707,
-   "no_habitables": 129,
-   "arp": 335,
+   "inmuebles": 744,
+   "no_habitables": 134,
+   "arp": 349,
    "cats": {
-    "sin_dano": 202,
-    "menor": 180,
+    "sin_dano": 225,
+    "menor": 189,
     "restringido": 35,
-    "mayor": 120,
+    "mayor": 125,
     "colapso": 9,
     "seguro": 132,
     "sin_acceso": 29
@@ -105,13 +105,13 @@
    "num": 4,
    "nombre": "Estación",
    "inmuebles": 500,
-   "no_habitables": 78,
+   "no_habitables": 79,
    "arp": 301,
    "cats": {
     "sin_dano": 168,
     "menor": 183,
-    "restringido": 40,
-    "mayor": 78,
+    "restringido": 39,
+    "mayor": 79,
     "colapso": 0,
     "seguro": 0,
     "sin_acceso": 31
@@ -130,20 +130,20 @@
     "restringido": 1,
     "mayor": 2,
     "colapso": 0,
-    "seguro": 1,
-    "sin_acceso": 3
+    "seguro": 0,
+    "sin_acceso": 4
    }
   },
   {
    "clave": "06 · Ecoturístico Cerro De Oro",
    "num": 6,
    "nombre": "Ecoturístico Cerro de Oro",
-   "inmuebles": 575,
+   "inmuebles": 577,
    "no_habitables": 17,
-   "arp": 139,
+   "arp": 140,
    "cats": {
-    "sin_dano": 337,
-    "menor": 110,
+    "sin_dano": 338,
+    "menor": 111,
     "restringido": 12,
     "mayor": 17,
     "colapso": 0,
@@ -172,14 +172,14 @@
    "clave": "08 · Palogrande",
    "num": 8,
    "nombre": "Palogrande",
-   "inmuebles": 693,
-   "no_habitables": 135,
-   "arp": 426,
+   "inmuebles": 699,
+   "no_habitables": 142,
+   "arp": 432,
    "cats": {
     "sin_dano": 240,
     "menor": 234,
-    "restringido": 59,
-    "mayor": 133,
+    "restringido": 58,
+    "mayor": 140,
     "colapso": 2,
     "seguro": 9,
     "sin_acceso": 16
@@ -211,8 +211,8 @@
    "arp": 50,
    "cats": {
     "sin_dano": 65,
-    "menor": 27,
-    "restringido": 3,
+    "menor": 28,
+    "restringido": 2,
     "mayor": 20,
     "colapso": 1,
     "seguro": 0,
@@ -223,30 +223,30 @@
    "clave": "11 · La Macarena",
    "num": 11,
    "nombre": "La Macarena",
-   "inmuebles": 317,
-   "no_habitables": 90,
-   "arp": 170,
+   "inmuebles": 324,
+   "no_habitables": 91,
+   "arp": 174,
    "cats": {
-    "sin_dano": 124,
-    "menor": 74,
+    "sin_dano": 125,
+    "menor": 77,
     "restringido": 11,
-    "mayor": 85,
+    "mayor": 86,
     "colapso": 5,
-    "seguro": 3,
-    "sin_acceso": 15
+    "seguro": 0,
+    "sin_acceso": 20
    }
   },
   {
    "clave": "12 · Nuevo Horizonte",
    "num": 12,
    "nombre": "Nuevo Horizonte",
-   "inmuebles": 142,
+   "inmuebles": 144,
    "no_habitables": 4,
-   "arp": 70,
+   "arp": 72,
    "cats": {
     "sin_dano": 66,
-    "menor": 63,
-    "restringido": 4,
+    "menor": 67,
+    "restringido": 2,
     "mayor": 3,
     "colapso": 1,
     "seguro": 0,
@@ -255,14 +255,14 @@
   }
  ],
  "rural": {
-  "inmuebles": 131,
-  "no_habitables": 61,
-  "arp": 105,
+  "inmuebles": 133,
+  "no_habitables": 68,
+  "arp": 107,
   "cats": {
    "sin_dano": 12,
    "menor": 24,
-   "restringido": 34,
-   "mayor": 47,
+   "restringido": 29,
+   "mayor": 54,
    "colapso": 14,
    "seguro": 0,
    "sin_acceso": 0
@@ -271,10 +271,10 @@
  "sin_ubicar": {
   "inmuebles": 3,
   "no_habitables": 1,
-  "arp": 2,
+  "arp": 3,
   "cats": {
-   "sin_dano": 1,
-   "menor": 1,
+   "sin_dano": 0,
+   "menor": 2,
    "restringido": 0,
    "mayor": 1,
    "colapso": 0,
@@ -318,7 +318,7 @@
    ],
    [
     "2026-11-09",
-    3
+    63
    ]
   ],
   "lluvias": [
@@ -382,7 +382,7 @@
   "personas": 13139
  },
  "demoliciones": {
-  "expedientes": 339,
+  "expedientes": 340,
   "demolidas": 52,
   "por_municipio": 45,
   "por_particular": 7,
@@ -390,7 +390,7 @@
    {
     "k": "solicitud",
     "l": "Solicitud y visita técnica",
-    "n": 238
+    "n": 239
    },
    {
     "k": "validacion",
@@ -421,7 +421,7 @@
    },
    {
     "l": "Por definir",
-    "n": 178
+    "n": 180
    },
    {
     "l": "Demolición total de edificio",
@@ -429,9 +429,9 @@
    },
    {
     "l": "Demolición total de vivienda",
-    "n": 102
+    "n": 101
    }
   ],
-  "valor_estimado": 31266841579
+  "valor_estimado": 31276841579
  }
 }
