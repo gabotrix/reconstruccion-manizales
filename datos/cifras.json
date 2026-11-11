@@ -1,51 +1,51 @@
 {
- "corte": "2026-11-10T11:09:57.314Z",
+ "corte": "2026-11-11T13:09:21.424Z",
  "equipo": {
-  "ingenieros": 36,
+  "ingenieros": 37,
   "desde": "2026-09-18",
-  "hasta": "2026-11-09"
+  "hasta": "2026-11-11"
  },
  "inmuebles": {
-  "total": 4656,
-  "edificios": 3635,
-  "casas": 1021,
+  "total": 4763,
+  "edificios": 3712,
+  "casas": 1051,
   "por_categoria": {
-   "sin_dano": 1686,
-   "menor": 1213,
-   "restringido": 209,
-   "mayor": 624,
+   "sin_dano": 1710,
+   "menor": 1259,
+   "restringido": 207,
+   "mayor": 649,
    "colapso": 35,
-   "seguro": 657,
-   "sin_acceso": 232
+   "seguro": 661,
+   "sin_acceso": 242
   }
  },
  "arp": {
-  "requieren": 2046,
-  "no_requieren": 2343,
-  "con_presupuesto": 1157,
-  "crr": 13557203942,
-  "costos_directos": 12145925697,
+  "requieren": 2115,
+  "no_requieren": 2371,
+  "con_presupuesto": 1250,
+  "crr": 15216448264,
+  "costos_directos": 13617870331,
   "por_categoria": {
    "menor": {
-    "inmuebles": 1213,
-    "con_presupuesto": 677,
-    "crr": 3963177719
+    "inmuebles": 1259,
+    "con_presupuesto": 728,
+    "crr": 4155023113
    },
    "restringido": {
-    "inmuebles": 209,
-    "con_presupuesto": 128,
-    "crr": 1293642339
+    "inmuebles": 207,
+    "con_presupuesto": 134,
+    "crr": 1315604152
    },
    "mayor": {
-    "inmuebles": 624,
-    "con_presupuesto": 352,
-    "crr": 8300383884
+    "inmuebles": 649,
+    "con_presupuesto": 388,
+    "crr": 9745820999
    }
   },
   "revision": {
-   "verificado": 49,
-   "en_revision": 25,
-   "sin_revisar": 1083
+   "verificado": 75,
+   "en_revision": 36,
+   "sin_revisar": 1139
   }
  },
  "comunas": [
@@ -53,14 +53,14 @@
    "clave": "01 · Atardeceres",
    "num": 1,
    "nombre": "Atardeceres",
-   "inmuebles": 1075,
-   "no_habitables": 66,
-   "arp": 283,
+   "inmuebles": 1092,
+   "no_habitables": 77,
+   "arp": 298,
    "cats": {
-    "sin_dano": 347,
-    "menor": 205,
+    "sin_dano": 349,
+    "menor": 209,
     "restringido": 12,
-    "mayor": 66,
+    "mayor": 77,
     "colapso": 0,
     "seguro": 367,
     "sin_acceso": 78
@@ -70,14 +70,14 @@
    "clave": "02 · San José",
    "num": 2,
    "nombre": "San José",
-   "inmuebles": 260,
-   "no_habitables": 31,
-   "arp": 75,
+   "inmuebles": 261,
+   "no_habitables": 30,
+   "arp": 77,
    "cats": {
-    "sin_dano": 84,
-    "menor": 40,
+    "sin_dano": 83,
+    "menor": 43,
     "restringido": 7,
-    "mayor": 28,
+    "mayor": 27,
     "colapso": 3,
     "seguro": 88,
     "sin_acceso": 10
@@ -87,14 +87,14 @@
    "clave": "03 · Cumanday",
    "num": 3,
    "nombre": "Cumanday",
-   "inmuebles": 744,
-   "no_habitables": 134,
-   "arp": 349,
+   "inmuebles": 763,
+   "no_habitables": 145,
+   "arp": 367,
    "cats": {
-    "sin_dano": 225,
-    "menor": 189,
-    "restringido": 35,
-    "mayor": 125,
+    "sin_dano": 226,
+    "menor": 197,
+    "restringido": 34,
+    "mayor": 136,
     "colapso": 9,
     "seguro": 132,
     "sin_acceso": 29
@@ -104,12 +104,12 @@
    "clave": "04 · Estación",
    "num": 4,
    "nombre": "Estación",
-   "inmuebles": 500,
+   "inmuebles": 501,
    "no_habitables": 79,
-   "arp": 301,
+   "arp": 302,
    "cats": {
     "sin_dano": 168,
-    "menor": 183,
+    "menor": 184,
     "restringido": 39,
     "mayor": 79,
     "colapso": 0,
@@ -121,16 +121,16 @@
    "clave": "05 · Ciudadela Del Norte",
    "num": 5,
    "nombre": "Ciudadela del Norte",
-   "inmuebles": 52,
-   "no_habitables": 2,
-   "arp": 33,
+   "inmuebles": 58,
+   "no_habitables": 3,
+   "arp": 36,
    "cats": {
-    "sin_dano": 15,
-    "menor": 30,
+    "sin_dano": 17,
+    "menor": 32,
     "restringido": 1,
-    "mayor": 2,
+    "mayor": 3,
     "colapso": 0,
-    "seguro": 0,
+    "seguro": 1,
     "sin_acceso": 4
    }
   },
@@ -138,13 +138,13 @@
    "clave": "06 · Ecoturístico Cerro De Oro",
    "num": 6,
    "nombre": "Ecoturístico Cerro de Oro",
-   "inmuebles": 577,
+   "inmuebles": 578,
    "no_habitables": 17,
-   "arp": 140,
+   "arp": 141,
    "cats": {
     "sin_dano": 338,
     "menor": 111,
-    "restringido": 12,
+    "restringido": 13,
     "mayor": 17,
     "colapso": 0,
     "seguro": 61,
@@ -155,34 +155,34 @@
    "clave": "07 · Tesorito",
    "num": 7,
    "nombre": "Tesorito",
-   "inmuebles": 24,
+   "inmuebles": 26,
    "no_habitables": 1,
-   "arp": 24,
+   "arp": 25,
    "cats": {
     "sin_dano": 0,
-    "menor": 23,
+    "menor": 24,
     "restringido": 0,
     "mayor": 1,
     "colapso": 0,
     "seguro": 0,
-    "sin_acceso": 0
+    "sin_acceso": 1
    }
   },
   {
    "clave": "08 · Palogrande",
    "num": 8,
    "nombre": "Palogrande",
-   "inmuebles": 699,
+   "inmuebles": 723,
    "no_habitables": 142,
-   "arp": 432,
+   "arp": 449,
    "cats": {
-    "sin_dano": 240,
-    "menor": 234,
-    "restringido": 58,
+    "sin_dano": 244,
+    "menor": 252,
+    "restringido": 57,
     "mayor": 140,
     "colapso": 2,
-    "seguro": 9,
-    "sin_acceso": 16
+    "seguro": 10,
+    "sin_acceso": 18
    }
   },
   {
@@ -223,29 +223,29 @@
    "clave": "11 · La Macarena",
    "num": 11,
    "nombre": "La Macarena",
-   "inmuebles": 324,
-   "no_habitables": 91,
-   "arp": 174,
+   "inmuebles": 355,
+   "no_habitables": 93,
+   "arp": 180,
    "cats": {
-    "sin_dano": 125,
-    "menor": 77,
-    "restringido": 11,
-    "mayor": 86,
+    "sin_dano": 141,
+    "menor": 82,
+    "restringido": 10,
+    "mayor": 88,
     "colapso": 5,
-    "seguro": 0,
-    "sin_acceso": 20
+    "seguro": 2,
+    "sin_acceso": 27
    }
   },
   {
    "clave": "12 · Nuevo Horizonte",
    "num": 12,
    "nombre": "Nuevo Horizonte",
-   "inmuebles": 144,
+   "inmuebles": 146,
    "no_habitables": 4,
-   "arp": 72,
+   "arp": 74,
    "cats": {
     "sin_dano": 66,
-    "menor": 67,
+    "menor": 69,
     "restringido": 2,
     "mayor": 3,
     "colapso": 1,
@@ -255,14 +255,14 @@
   }
  ],
  "rural": {
-  "inmuebles": 133,
-  "no_habitables": 68,
-  "arp": 107,
+  "inmuebles": 136,
+  "no_habitables": 69,
+  "arp": 110,
   "cats": {
    "sin_dano": 12,
-   "menor": 24,
+   "menor": 26,
    "restringido": 29,
-   "mayor": 54,
+   "mayor": 55,
    "colapso": 14,
    "seguro": 0,
    "sin_acceso": 0
@@ -298,7 +298,7 @@
    ],
    [
     "2026-10-05",
-    334
+    333
    ],
    [
     "2026-10-12",
@@ -306,19 +306,19 @@
    ],
    [
     "2026-10-19",
-    488
+    487
    ],
    [
     "2026-10-26",
-    1644
+    1643
    ],
    [
     "2026-11-02",
-    711
+    712
    ],
    [
     "2026-11-09",
-    63
+    172
    ]
   ],
   "lluvias": [
@@ -341,16 +341,20 @@
    [
     "2026-11-02",
     33
+   ],
+   [
+    "2026-11-09",
+    1
    ]
   ]
  },
  "lluvias": {
-  "visitas": 207,
+  "visitas": 208,
   "predios_por_riesgo": {
    "inminente": 4,
    "alto": 22,
    "medio": 19,
-   "bajo": 19,
+   "bajo": 20,
    "sin": 41
   }
  },
@@ -382,7 +386,7 @@
   "personas": 13139
  },
  "demoliciones": {
-  "expedientes": 340,
+  "expedientes": 341,
   "demolidas": 52,
   "por_municipio": 45,
   "por_particular": 7,
@@ -390,7 +394,7 @@
    {
     "k": "solicitud",
     "l": "Solicitud y visita técnica",
-    "n": 239
+    "n": 240
    },
    {
     "k": "validacion",
@@ -421,7 +425,7 @@
    },
    {
     "l": "Por definir",
-    "n": 180
+    "n": 181
    },
    {
     "l": "Demolición total de edificio",
@@ -432,6 +436,6 @@
     "n": 101
    }
   ],
-  "valor_estimado": 31276841579
+  "valor_estimado": 31266841581
  }
 }
