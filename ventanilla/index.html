@@ -1,0 +1,459 @@
+<!doctype html>
+<html lang="es-CO">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Solo habla con la función «ventanilla» de la plataforma. Fuentes de Google Fonts. Sin JS ni estilos en línea. -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src https://api.manizalesconstruye.camacolcaldas.com; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<title>Ventanilla única de la reconstrucción · Manizales Construye</title>
+<meta name="description" content="Consulte el estado de su predio, pida una visita técnica, siga su radicado y conozca las ayudas de la reconstrucción de Manizales, desde el celular y sin hacer fila.">
+<meta name="theme-color" content="#0f2447">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23fcc419'/%3E%3Ctext x='32' y='42' font-family='Arial' font-weight='700' font-size='26' text-anchor='middle' fill='%230f2447'%3EMC%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap">
+<link rel="stylesheet" href="estilos.css">
+<script src="app.js" defer></script>
+</head>
+<body>
+<a class="saltar" href="#servicios">Saltar a los trámites</a>
+
+<!-- ============ PORTADA ============ -->
+<header class="portada" id="inicio">
+  <div class="portada-velo">
+    <div class="barra">
+      <a class="marca" href="#inicio" aria-label="Manizales Construye, inicio de la ventanilla única">
+        <span class="sello" aria-hidden="true">MC</span>
+        <span class="marca-txt"><b>Manizales Construye</b><span>Ventanilla única</span></span>
+      </a>
+      <nav class="nav" id="nav" aria-label="Trámites">
+        <ul>
+          <li><a href="#consultar">Consultar mi predio</a></li>
+          <li><a href="#pedir-visita">Pedir una visita</a></li>
+          <li><a href="#seguimiento">Seguir mi radicado</a></li>
+          <li><a href="#ayudas">Ayudas</a></li>
+          <li class="solo-movil"><a href="../">Volver a las cifras de la reconstrucción</a></li>
+        </ul>
+      </nav>
+      <a class="boton amarillo barra-cta" href="#pedir-visita">Pedir una visita</a>
+      <button class="menu" id="menu" type="button" aria-expanded="false" aria-controls="nav" aria-label="Abrir el menú">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+
+    <div class="portada-cuerpo">
+      <a class="volver" href="../">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5M11 18l-6-6 6-6"/></svg>
+        Volver a las cifras de la reconstrucción
+      </a>
+      <h1>Ventanilla única de la reconstrucción</h1>
+      <p class="lead">Consulte en qué va su predio, pida una visita técnica y siga su solicitud desde el celular, sin hacer fila.</p>
+      <p class="aviso-123">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 9v4M12 17h.01"/><path d="M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/></svg>
+        <span><b>Si hay peligro:</b> salga y llame a la <b>línea 123</b>.</span>
+      </p>
+    </div>
+  </div>
+</header>
+
+<main>
+  <!-- ============ LOS CUATRO SERVICIOS ============ -->
+  <section class="servicios-v" id="servicios" aria-labelledby="h-servicios">
+    <div class="envoltura">
+      <h2 class="oculto" id="h-servicios">¿Qué necesita hacer?</h2>
+      <ul class="tarjetas-v">
+        <li><a class="tarjeta-v" href="#consultar">
+          <span class="v-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></span>
+          <span class="tv-txt"><b>Consultar mi predio</b><span>Si ya tuvo visita, qué resultado tiene y qué sigue.</span></span>
+          <svg class="tv-flecha" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a></li>
+        <li><a class="tarjeta-v" href="#pedir-visita">
+          <span class="v-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 18h18M5 18v-3a7 7 0 0 1 14 0v3M10 8V5h4v3"/></svg></span>
+          <span class="tv-txt"><b>Pedir una visita técnica</b><span>Si un ingeniero todavía no ha revisado su vivienda.</span></span>
+          <svg class="tv-flecha" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a></li>
+        <li><a class="tarjeta-v" href="#seguimiento">
+          <span class="v-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M9 13h6M9 17h4"/></svg></span>
+          <span class="tv-txt"><b>Seguir mi radicado</b><span>En qué va su solicitud, con el número que le dimos.</span></span>
+          <svg class="tv-flecha" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a></li>
+        <li><a class="tarjeta-v" href="#ayudas">
+          <span class="v-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 4 6v6c0 5 3.4 8.3 8 9 4.6-.7 8-4 8-9V6z"/><path d="m9 12 2 2 4-4"/></svg></span>
+          <span class="tv-txt"><b>Ayudas</b><span>ARP, RUD, reparación, vivienda nueva y demolición.</span></span>
+          <svg class="tv-flecha" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a></li>
+      </ul>
+      <p class="elija" id="elija">Toque el trámite que necesita para abrirlo.</p>
+    </div>
+  </section>
+
+  <!-- ============ 1. CONSULTAR MI PREDIO ============ -->
+  <section class="seccion tramite-sec" id="consultar" aria-labelledby="h-consultar" hidden>
+    <div class="envoltura">
+      <div class="cabeza">
+        <p class="rotulo">Consultar mi predio</p>
+        <h2 id="h-consultar" tabindex="-1">¿En qué va mi predio?</h2>
+        <p>Busque su predio y confirme con una cédula. Le mostramos sus visitas, el resultado y lo que sigue.</p>
+      </div>
+
+      <div class="tramite">
+        <div class="tarjeta formulario">
+          <ol class="pasos" aria-label="Pasos de la consulta">
+            <li id="c-paso-1" aria-current="step"><span>1</span>Buscar el predio</li>
+            <li id="c-paso-2"><span>2</span>Confirmar con la cédula</li>
+          </ol>
+
+          <search>
+            <form id="f-buscar" novalidate aria-labelledby="h-buscar">
+              <h3 class="paso-tit" id="h-buscar">Paso 1. Busque su predio</h3>
+              <div class="campo">
+                <label for="b-q">Dirección o número predial</label>
+                <p class="ayuda" id="b-q-ayuda">Ejemplo: <b>Calle 22 # 24-11</b>. El número predial tiene de 20 a 30 dígitos y aparece en el recibo del impuesto predial.</p>
+                <div class="busca-fila">
+                  <input id="b-q" name="q" type="text" required minlength="4" maxlength="120" autocomplete="off" autocorrect="off" autocapitalize="none" spellcheck="false" enterkeyhint="search" aria-describedby="b-q-ayuda" data-error="b-q-error" data-valida="busqueda">
+                  <button class="boton azul" type="submit">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>Buscar
+                  </button>
+                </div>
+                <p class="error" id="b-q-error" hidden></p>
+              </div>
+            </form>
+          </search>
+          <div class="estado" id="b-estado" role="status"></div>
+
+          <form id="f-consultar" novalidate aria-labelledby="h-confirmar" hidden>
+            <fieldset class="campo grupo-radios" id="c-predios-grupo" data-error="c-predio-error">
+              <legend>Elija su predio</legend>
+              <div class="opciones" id="c-predios"></div>
+              <p class="error" id="c-predio-error" hidden></p>
+            </fieldset>
+
+            <h3 class="paso-tit" id="h-confirmar">Paso 2. Confirme con una cédula</h3>
+            <div class="campo">
+              <label for="c-doc">Cédula de una persona del predio</label>
+              <p class="ayuda" id="c-doc-ayuda">Del titular, del propietario o de quien atendió la visita. Solo los números, sin puntos.</p>
+              <input id="c-doc" name="documento" type="text" inputmode="numeric" required autocomplete="off" autocorrect="off" spellcheck="false" maxlength="15" enterkeyhint="done" aria-describedby="c-doc-ayuda c-privacidad" data-error="c-doc-error" data-valida="cedula">
+              <p class="error" id="c-doc-error" hidden></p>
+            </div>
+            <p class="privacidad" id="c-privacidad">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg>
+              <span>Su cédula solo sirve para comprobar que usted tiene relación con el predio. No mostramos nombres ni datos de nadie.</span>
+            </p>
+            <button class="boton amarillo ancho" type="submit">Consultar el estado</button>
+          </form>
+        </div>
+
+        <div class="resultado" id="c-resultado"></div>
+
+        <aside class="lateral" aria-label="Antes de consultar">
+          <figure class="foto lateral-foto"><img src="../img/fotos/casa-centro.jpg" alt="Fachada de una casa del centro histórico de Manizales" width="1280" height="863" loading="lazy"></figure>
+          <div class="lateral-txt">
+            <h3>Tenga a mano</h3>
+            <ul class="chulos">
+              <li>La dirección del predio, o el número predial del recibo del impuesto.</li>
+              <li>La cédula del titular, del propietario o de quien atendió la visita.</li>
+            </ul>
+            <p class="nota">¿Su predio no aparece? <a href="#pedir-visita">Pida una visita técnica</a>.</p>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 2. PEDIR UNA VISITA TÉCNICA ============ -->
+  <section class="seccion tramite-sec" id="pedir-visita" aria-labelledby="h-pedir" hidden>
+    <div class="envoltura">
+      <div class="cabeza">
+        <p class="rotulo">Pedir una visita técnica</p>
+        <h2 id="h-pedir" tabindex="-1">Pida que un ingeniero revise su vivienda</h2>
+        <p>Llene estos datos. Le daremos un número de radicado y un coordinador programará la visita.</p>
+      </div>
+
+      <div class="tramite">
+        <div class="tarjeta formulario">
+          <div class="resumen-errores" id="p-resumen" tabindex="-1" hidden></div>
+
+          <form id="f-pedir" novalidate aria-labelledby="h-pedir">
+            <p class="obligatorio">Todos los datos son obligatorios, menos el correo.</p>
+
+            <fieldset class="bloque">
+              <legend>Sus datos</legend>
+              <div class="campo">
+                <label for="p-nombre">Nombre completo</label>
+                <input id="p-nombre" name="nombre" type="text" required minlength="3" maxlength="120" autocomplete="name" enterkeyhint="next" data-error="p-nombre-error" data-valida="nombre">
+                <p class="error" id="p-nombre-error" hidden></p>
+              </div>
+              <div class="campo">
+                <label for="p-doc">Cédula</label>
+                <p class="ayuda" id="p-doc-ayuda">Solo los números, sin puntos.</p>
+                <input id="p-doc" name="documento" type="text" inputmode="numeric" required maxlength="15" autocomplete="off" autocorrect="off" spellcheck="false" enterkeyhint="next" aria-describedby="p-doc-ayuda" data-error="p-doc-error" data-valida="cedula">
+                <p class="error" id="p-doc-error" hidden></p>
+              </div>
+              <div class="campo">
+                <label for="p-cel">Celular</label>
+                <p class="ayuda" id="p-cel-ayuda">El coordinador lo llamará a este número para programar la visita.</p>
+                <input id="p-cel" name="celular" type="tel" inputmode="tel" required maxlength="20" autocomplete="tel" enterkeyhint="next" aria-describedby="p-cel-ayuda" data-error="p-cel-error" data-valida="celular">
+                <p class="error" id="p-cel-error" hidden></p>
+              </div>
+              <div class="campo">
+                <label for="p-correo">Correo electrónico <span class="opcional">(opcional)</span></label>
+                <input id="p-correo" name="correo" type="email" maxlength="120" autocomplete="email" autocorrect="off" autocapitalize="none" spellcheck="false" enterkeyhint="next" data-error="p-correo-error" data-valida="correo">
+                <p class="error" id="p-correo-error" hidden></p>
+              </div>
+              <fieldset class="campo grupo-radios" id="p-calidad-grupo" data-error="p-calidad-error">
+                <legend>¿Quién pide la visita?</legend>
+                <div class="opciones dos-col">
+                  <label class="opcion"><input type="radio" name="calidad" value="propietario" required><span>Propietario</span></label>
+                  <label class="opcion"><input type="radio" name="calidad" value="arrendatario"><span>Arrendatario</span></label>
+                  <label class="opcion"><input type="radio" name="calidad" value="familiar"><span>Familiar</span></label>
+                  <label class="opcion"><input type="radio" name="calidad" value="otro"><span>Otro</span></label>
+                </div>
+                <p class="error" id="p-calidad-error" hidden></p>
+              </fieldset>
+            </fieldset>
+
+            <fieldset class="bloque">
+              <legend>Ubicación del predio</legend>
+              <div class="campo">
+                <label for="p-q">Busque el predio por dirección o número predial</label>
+                <p class="ayuda" id="p-q-ayuda">Ejemplo: <b>Calle 22 # 24-11</b>. Después elíjalo en la lista.</p>
+                <div class="busca-fila">
+                  <input id="p-q" type="text" minlength="4" maxlength="120" autocomplete="off" autocorrect="off" autocapitalize="none" spellcheck="false" enterkeyhint="search" aria-describedby="p-q-ayuda" data-error="p-q-error" data-valida="busqueda">
+                  <button class="boton azul" type="button" id="p-buscar">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>Buscar
+                  </button>
+                </div>
+                <p class="error" id="p-q-error" hidden></p>
+              </div>
+              <div class="estado" id="p-b-estado" role="status"></div>
+
+              <fieldset class="campo grupo-radios" id="p-predios-grupo" data-error="p-predio-error">
+                <legend>Elija el predio</legend>
+                <div class="opciones" id="p-predios">
+                  <label class="opcion manual"><input type="radio" name="id22" value="manual" required><span><b>No lo encuentro: escribiré la dirección</b></span></label>
+                </div>
+                <p class="error" id="p-predio-error" hidden></p>
+              </fieldset>
+
+              <div class="manual-campos" id="p-manual" hidden>
+                <div class="campo">
+                  <label for="p-dir">Dirección del predio</label>
+                  <p class="ayuda" id="p-dir-ayuda">Como la escribiría en un sobre. Ejemplo: Carrera 23 # 30-15, apartamento 201.</p>
+                  <input id="p-dir" name="direccion" type="text" maxlength="160" autocomplete="street-address" enterkeyhint="next" aria-describedby="p-dir-ayuda" data-error="p-dir-error" data-valida="direccion">
+                  <p class="error" id="p-dir-error" hidden></p>
+                </div>
+                <div class="campo">
+                  <label for="p-barrio">Barrio o vereda</label>
+                  <input id="p-barrio" name="barrio" type="text" maxlength="80" autocomplete="address-level3" enterkeyhint="next" data-error="p-barrio-error" data-valida="barrio">
+                  <p class="error" id="p-barrio-error" hidden></p>
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset class="bloque">
+              <legend>El daño</legend>
+              <div class="campo">
+                <label for="p-dano">¿Qué daño ve?</label>
+                <p class="ayuda" id="p-dano-ayuda">En pocas palabras: grietas, muros, techo, pisos, puertas que no cierran…</p>
+                <textarea id="p-dano" name="afectacion" rows="4" required minlength="10" maxlength="1000" aria-describedby="p-dano-ayuda" data-error="p-dano-error" data-valida="dano"></textarea>
+                <p class="error" id="p-dano-error" hidden></p>
+              </div>
+              <fieldset class="campo grupo-radios" id="p-peligro-grupo" data-error="p-peligro-error">
+                <legend>¿Hay peligro de que se caiga algo?</legend>
+                <div class="opciones dos-col">
+                  <label class="opcion"><input type="radio" name="peligro" value="si" required><span>Sí</span></label>
+                  <label class="opcion"><input type="radio" name="peligro" value="no"><span>No</span></label>
+                </div>
+                <p class="error" id="p-peligro-error" hidden></p>
+              </fieldset>
+              <div class="alerta-peligro" id="p-alerta" role="alert"></div>
+            </fieldset>
+
+            <div class="campo autoriza" id="p-autoriza-campo">
+              <label class="opcion casilla">
+                <input id="p-autoriza" name="autoriza" type="checkbox" required data-error="p-autoriza-error" data-valida="autoriza">
+                <span>Autorizo a la Alcaldía de Manizales y a sus aliados a tratar mis datos personales para atender esta solicitud, según la Ley 1581 de 2012.</span>
+              </label>
+              <p class="error" id="p-autoriza-error" hidden></p>
+            </div>
+
+            <div class="trampa" aria-hidden="true">
+              <label for="p-sitio">No llene este campo</label>
+              <input id="p-sitio" name="sitio" type="text" tabindex="-1" autocomplete="off">
+            </div>
+
+            <button class="boton amarillo ancho" type="submit">Enviar la solicitud</button>
+          </form>
+          <div class="estado" id="p-estado" role="status"></div>
+          <div class="radicado-caja" id="p-resultado" tabindex="-1" hidden></div>
+        </div>
+
+        <aside class="lateral" aria-label="Qué pasa después">
+          <figure class="foto lateral-foto"><img src="../img/fotos/inspector-ventana.jpg" alt="Un inspector con casco amarillo y chaleco reflectivo revisa una ventana con su planilla en la mano" width="1600" height="2400" loading="lazy"></figure>
+          <div class="lateral-txt">
+            <h3>Qué pasa después</h3>
+            <ol class="numerada">
+              <li>Recibe un número de radicado. Guárdelo.</li>
+              <li>Un coordinador revisa la solicitud y programa la visita.</li>
+              <li>Un ingeniero de la alianza visita el predio.</li>
+            </ol>
+            <p class="nota">Con su radicado puede ver en qué va en <a href="#seguimiento">Seguir mi radicado</a>.</p>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 3. SEGUIR MI RADICADO ============ -->
+  <section class="seccion tramite-sec" id="seguimiento" aria-labelledby="h-seguimiento" hidden>
+    <div class="envoltura">
+      <div class="cabeza">
+        <p class="rotulo">Seguir mi radicado</p>
+        <h2 id="h-seguimiento" tabindex="-1">¿En qué va mi solicitud?</h2>
+        <p>Escriba el radicado que le dimos al pedir la visita y la cédula con la que lo pidió.</p>
+      </div>
+
+      <div class="tramite">
+        <div class="tarjeta formulario">
+          <form id="f-seguir" novalidate aria-labelledby="h-seguimiento">
+            <div class="campo">
+              <label for="s-rad">Número de radicado</label>
+              <p class="ayuda" id="s-rad-ayuda">Ejemplo: <b>VU-2026-00001</b>. Puede escribirlo en minúsculas o sin guiones.</p>
+              <input id="s-rad" name="radicado" type="text" required maxlength="20" autocomplete="off" autocorrect="off" autocapitalize="characters" spellcheck="false" enterkeyhint="next" aria-describedby="s-rad-ayuda" data-error="s-rad-error" data-valida="radicado">
+              <p class="error" id="s-rad-error" hidden></p>
+            </div>
+            <div class="campo">
+              <label for="s-doc">Cédula</label>
+              <p class="ayuda" id="s-doc-ayuda">La misma con la que pidió la visita. Solo los números.</p>
+              <input id="s-doc" name="documento" type="text" inputmode="numeric" required maxlength="15" autocomplete="off" autocorrect="off" spellcheck="false" enterkeyhint="done" aria-describedby="s-doc-ayuda" data-error="s-doc-error" data-valida="cedula">
+              <p class="error" id="s-doc-error" hidden></p>
+            </div>
+            <button class="boton amarillo ancho" type="submit">Ver en qué va</button>
+          </form>
+          <div class="estado" id="s-estado" role="status"></div>
+        </div>
+
+        <div class="resultado" id="s-resultado"></div>
+
+        <aside class="lateral solo-texto" aria-label="Cómo avanza una solicitud">
+          <div class="lateral-txt">
+            <h3>Cómo avanza una solicitud</h3>
+            <ol class="numerada">
+              <li><b>Recibida.</b> La solicitud llegó y espera a un coordinador.</li>
+              <li><b>Visita programada.</b> Ya tiene fecha para la visita.</li>
+              <li><b>Visitada.</b> El ingeniero ya fue. Consulte el resultado en <a href="#consultar">Consultar mi predio</a>.</li>
+            </ol>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 4. AYUDAS ============ -->
+  <section class="seccion tramite-sec" id="ayudas" aria-labelledby="h-ayudas" hidden>
+    <div class="envoltura">
+      <div class="cabeza">
+        <p class="rotulo">Ayudas</p>
+        <h2 id="h-ayudas" tabindex="-1">Las ayudas de la reconstrucción, explicadas</h2>
+        <p class="borrador">Borrador: pendiente de validación</p>
+        <p>Estos textos todavía los está revisando la alianza. Antes de hacer un trámite, confírmelo en la Alcaldía de Manizales.</p>
+      </div>
+
+      <div class="acordeones">
+        <details>
+          <summary><span class="v-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.8-3.8a6 6 0 0 1-7.9 7.9l-6.9 6.9a2.1 2.1 0 0 1-3-3l6.9-6.9a6 6 0 0 1 7.9-7.9z"/></svg></span><span class="a-tit">¿Qué es el ARP?</span><svg class="a-flecha" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary>
+          <div class="a-cuerpo">
+            <p>El ARP es el <b>aporte a la reparación patrimonial</b>: el valor que ayuda a reparar la vivienda según el daño que encontró el ingeniero y el presupuesto de obra revisado.</p>
+            <p>Entran los inmuebles con daño menor, uso restringido o daño mayor que se pueden reparar. El ingeniero toma las cantidades de obra en la visita y el equipo de presupuesto calcula el costo.</p>
+            <p class="borrador">Borrador: pendiente de validación</p>
+          </div>
+        </details>
+        <details>
+          <summary><span class="v-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><rect x="8" y="2" width="8" height="4" rx="1"/><path d="M9 12h6M9 16h4"/></svg></span><span class="a-tit">¿Qué es el RUD?</span><svg class="a-flecha" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary>
+          <div class="a-cuerpo">
+            <p>El RUD es el <b>Registro Único de Damnificados</b>. Inscribirse es el primer paso para recibir ayudas.</p>
+            <p>La inscripción se hace ante la Alcaldía de Manizales. Pregunte allí qué documentos debe llevar.</p>
+            <p class="borrador">Borrador: pendiente de validación</p>
+          </div>
+        </details>
+        <details>
+          <summary><span class="v-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21h18M5 21V8l7-5 7 5v13"/><path d="M9 21v-6h6v6"/></svg></span><span class="a-tit">Reparación de vivienda</span><svg class="a-flecha" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary>
+          <div class="a-cuerpo">
+            <p>Si la visita dice que la vivienda se puede reparar, el equipo prepara un presupuesto de obra con la lista de precios de la Alcaldía. Ese presupuesto se revisa antes de definir el apoyo.</p>
+            <p>Mientras tanto, no haga obras grandes en la estructura sin consultar: un cambio puede afectar la revisión.</p>
+            <p class="borrador">Borrador: pendiente de validación</p>
+          </div>
+        </details>
+        <details>
+          <summary><span class="v-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12 12 4l9 8"/><path d="M5 10v10h14V10"/><path d="M12 14v4M10 16h4"/></svg></span><span class="a-tit">Vivienda nueva</span><svg class="a-flecha" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary>
+          <div class="a-cuerpo">
+            <p>Es para las viviendas que <b>no se pueden reparar</b>. La alianza está definiendo cómo funcionará y quiénes podrán acceder.</p>
+            <p>Si su vivienda está en ese caso, manténgase inscrito en el RUD y atento a lo que informe la Alcaldía.</p>
+            <p class="borrador">Borrador: pendiente de validación</p>
+          </div>
+        </details>
+        <details>
+          <summary><span class="v-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 12-8.4 8.4a2.1 2.1 0 0 1-3-3L12 9"/><path d="M17.6 15 22 10.6M20.9 11.7l-6.6-6.6a2 2 0 0 0-1.4-.6H10l1.3 1.3a2 2 0 0 1 0 2.8l-.6.6"/></svg></span><span class="a-tit">Demolición</span><svg class="a-flecha" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary>
+          <div class="a-cuerpo">
+            <p>Se abre cuando un inmueble <b>no se puede salvar</b>. No se decide en la visita: el expediente pasa por estas etapas.</p>
+            <ol class="etapas">
+              <li>Solicitud y visita técnica.</li>
+              <li>Validación y declaratoria de ruina.</li>
+              <li>Aprobación del Comité del Fondo.</li>
+              <li>Contratación y obra.</li>
+            </ol>
+            <p>Si su predio tiene un expediente, en <a href="#consultar">Consultar mi predio</a> verá su radicado y la etapa en la que va.</p>
+            <p class="borrador">Borrador: pendiente de validación</p>
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ BANDA ============ -->
+  <section class="banda" aria-label="Cómo cuidamos sus datos">
+    <ul>
+      <li><span class="b-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 18h2"/></svg></span>Desde el celular, sin filas</li>
+      <li><span class="b-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 4 6v6c0 5 3.4 8.3 8 9 4.6-.7 8-4 8-9V6z"/><path d="m9 12 2 2 4-4"/></svg></span>No mostramos nombres ni cédulas</li>
+      <li><span class="b-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 18h18M5 18v-3a7 7 0 0 1 14 0v3M10 8V5h4v3"/></svg></span>Visitas de ingenieros de la alianza</li>
+      <li><span class="b-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg></span>Emergencias: línea 123</li>
+    </ul>
+  </section>
+
+  <!-- ============ ALIANZA ============ -->
+  <section class="alianza" aria-label="Una alianza de">
+    <div class="envoltura alianza-fila">
+      <p>Una alianza de</p>
+      <div class="logos">
+        <img class="l-alc" src="../img/mzl-alcaldia.webp" alt="Alcaldía de Manizales" width="705" height="200">
+        <img class="l-infi" src="../img/infi.webp" alt="Infimanizales" width="123" height="120">
+        <img class="l-cam" src="../img/cam.webp" alt="Camacol Regional Caldas" width="255" height="120">
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="pie">
+  <div class="envoltura">
+    <div class="pie-arriba">
+      <a class="marca" href="#inicio" aria-label="Manizales Construye, volver al inicio de la ventanilla">
+        <span class="sello" aria-hidden="true">MC</span>
+        <span class="marca-txt"><b>Manizales Construye</b><span>Ventanilla única</span></span>
+      </a>
+      <div class="pie-logos">
+        <span>Una alianza de</span>
+        <img class="l-alc" src="../img/mzl-alcaldia.webp" alt="Alcaldía de Manizales" width="705" height="200">
+        <img class="l-infi" src="../img/infi.webp" alt="Infimanizales" width="123" height="120">
+        <img class="l-cam" src="../img/cam.webp" alt="Camacol Regional Caldas" width="255" height="120">
+      </div>
+    </div>
+    <p>Ventanilla única de la alianza entre la Alcaldía de Manizales, Infimanizales y Camacol Regional Caldas. Sus datos se usan solo para atender su trámite, según la Ley 1581 de 2012.</p>
+    <p><a class="pie-enlace" href="../">Volver a las cifras de la reconstrucción</a></p>
+    <p class="pie-123"><b>Emergencias: línea 123</b></p>
+    <p class="creditos">Fotos: Sebastián Gonzalez (CC BY-SA 4.0), Wikimedia Commons; RDNE Stock, Pexels.</p>
+  </div>
+</footer>
+<div class="oculto" id="anunciador" aria-live="polite"></div>
+</body>
+</html>
