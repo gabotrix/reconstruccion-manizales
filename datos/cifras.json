@@ -1,51 +1,51 @@
 {
- "corte": "2026-11-13T14:07:35.028Z",
+ "corte": "2026-11-15T23:06:17.844Z",
  "equipo": {
   "ingenieros": 49,
   "desde": "2026-09-18",
-  "hasta": "2026-11-13"
+  "hasta": "2026-11-14"
  },
  "inmuebles": {
-  "total": 5291,
-  "edificios": 4153,
-  "casas": 1138,
+  "total": 5501,
+  "edificios": 4277,
+  "casas": 1224,
   "por_categoria": {
-   "sin_dano": 1877,
-   "menor": 1556,
-   "restringido": 202,
-   "mayor": 705,
-   "colapso": 36,
+   "sin_dano": 1933,
+   "menor": 1658,
+   "restringido": 204,
+   "mayor": 742,
+   "colapso": 38,
    "seguro": 670,
-   "sin_acceso": 245
+   "sin_acceso": 256
   }
  },
  "arp": {
-  "requieren": 2463,
-  "no_requieren": 2547,
-  "con_presupuesto": 1397,
-  "crr": 17558888343,
-  "costos_directos": 15692467425,
+  "requieren": 2604,
+  "no_requieren": 2603,
+  "con_presupuesto": 1528,
+  "crr": 19364365412,
+  "costos_directos": 17245433086,
   "por_categoria": {
    "menor": {
-    "inmuebles": 1556,
-    "con_presupuesto": 807,
-    "crr": 4576378795
+    "inmuebles": 1658,
+    "con_presupuesto": 869,
+    "crr": 5048893023
    },
    "restringido": {
-    "inmuebles": 202,
-    "con_presupuesto": 149,
-    "crr": 1517490140
+    "inmuebles": 204,
+    "con_presupuesto": 158,
+    "crr": 1594513135
    },
    "mayor": {
-    "inmuebles": 705,
-    "con_presupuesto": 441,
-    "crr": 11465019408
+    "inmuebles": 742,
+    "con_presupuesto": 501,
+    "crr": 12720959254
    }
   },
   "revision": {
-   "verificado": 99,
-   "en_revision": 59,
-   "sin_revisar": 1239
+   "verificado": 97,
+   "en_revision": 57,
+   "sin_revisar": 1374
   }
  },
  "comunas": [
@@ -53,14 +53,14 @@
    "clave": "01 · Atardeceres",
    "num": 1,
    "nombre": "Atardeceres",
-   "inmuebles": 1106,
-   "no_habitables": 86,
-   "arp": 311,
+   "inmuebles": 1117,
+   "no_habitables": 97,
+   "arp": 322,
    "cats": {
     "sin_dano": 350,
     "menor": 212,
     "restringido": 13,
-    "mayor": 86,
+    "mayor": 97,
     "colapso": 0,
     "seguro": 368,
     "sin_acceso": 77
@@ -87,31 +87,31 @@
    "clave": "03 · Cumanday",
    "num": 3,
    "nombre": "Cumanday",
-   "inmuebles": 818,
-   "no_habitables": 153,
-   "arp": 402,
+   "inmuebles": 842,
+   "no_habitables": 155,
+   "arp": 412,
    "cats": {
-    "sin_dano": 241,
-    "menor": 223,
+    "sin_dano": 251,
+    "menor": 231,
     "restringido": 35,
-    "mayor": 144,
+    "mayor": 146,
     "colapso": 9,
     "seguro": 134,
-    "sin_acceso": 32
+    "sin_acceso": 36
    }
   },
   {
    "clave": "04 · Estación",
    "num": 4,
    "nombre": "Estación",
-   "inmuebles": 583,
-   "no_habitables": 80,
-   "arp": 306,
+   "inmuebles": 584,
+   "no_habitables": 81,
+   "arp": 307,
    "cats": {
     "sin_dano": 241,
-    "menor": 187,
-    "restringido": 39,
-    "mayor": 80,
+    "menor": 188,
+    "restringido": 38,
+    "mayor": 81,
     "colapso": 0,
     "seguro": 4,
     "sin_acceso": 32
@@ -121,12 +121,12 @@
    "clave": "05 · Ciudadela Del Norte",
    "num": 5,
    "nombre": "Ciudadela del Norte",
-   "inmuebles": 121,
+   "inmuebles": 125,
    "no_habitables": 3,
-   "arp": 47,
+   "arp": 48,
    "cats": {
-    "sin_dano": 69,
-    "menor": 43,
+    "sin_dano": 72,
+    "menor": 44,
     "restringido": 1,
     "mayor": 3,
     "colapso": 0,
@@ -138,12 +138,12 @@
    "clave": "06 · Ecoturístico Cerro De Oro",
    "num": 6,
    "nombre": "Ecoturístico Cerro de Oro",
-   "inmuebles": 600,
+   "inmuebles": 640,
    "no_habitables": 18,
-   "arp": 156,
+   "arp": 192,
    "cats": {
-    "sin_dano": 345,
-    "menor": 125,
+    "sin_dano": 349,
+    "menor": 161,
     "restringido": 13,
     "mayor": 18,
     "colapso": 0,
@@ -172,14 +172,14 @@
    "clave": "08 · Palogrande",
    "num": 8,
    "nombre": "Palogrande",
-   "inmuebles": 970,
-   "no_habitables": 166,
-   "arp": 684,
+   "inmuebles": 990,
+   "no_habitables": 182,
+   "arp": 703,
    "cats": {
-    "sin_dano": 255,
-    "menor": 469,
+    "sin_dano": 256,
+    "menor": 472,
     "restringido": 51,
-    "mayor": 164,
+    "mayor": 180,
     "colapso": 2,
     "seguro": 12,
     "sin_acceso": 17
@@ -189,31 +189,31 @@
    "clave": "09 · Universitaria",
    "num": 9,
    "nombre": "Universitaria",
-   "inmuebles": 14,
-   "no_habitables": 5,
-   "arp": 11,
+   "inmuebles": 41,
+   "no_habitables": 6,
+   "arp": 33,
    "cats": {
-    "sin_dano": 3,
-    "menor": 4,
-    "restringido": 2,
-    "mayor": 5,
+    "sin_dano": 7,
+    "menor": 22,
+    "restringido": 5,
+    "mayor": 6,
     "colapso": 0,
     "seguro": 0,
-    "sin_acceso": 0
+    "sin_acceso": 1
    }
   },
   {
    "clave": "10 · La Fuente",
    "num": 10,
    "nombre": "La Fuente",
-   "inmuebles": 123,
-   "no_habitables": 22,
-   "arp": 55,
+   "inmuebles": 146,
+   "no_habitables": 25,
+   "arp": 62,
    "cats": {
-    "sin_dano": 66,
-    "menor": 32,
+    "sin_dano": 82,
+    "menor": 36,
     "restringido": 2,
-    "mayor": 21,
+    "mayor": 24,
     "colapso": 1,
     "seguro": 0,
     "sin_acceso": 1
@@ -223,29 +223,29 @@
    "clave": "11 · La Macarena",
    "num": 11,
    "nombre": "La Macarena",
-   "inmuebles": 369,
-   "no_habitables": 98,
-   "arp": 190,
+   "inmuebles": 419,
+   "no_habitables": 102,
+   "arp": 215,
    "cats": {
-    "sin_dano": 145,
-    "menor": 89,
+    "sin_dano": 163,
+    "menor": 111,
     "restringido": 8,
-    "mayor": 93,
-    "colapso": 5,
+    "mayor": 96,
+    "colapso": 6,
     "seguro": 2,
-    "sin_acceso": 27
+    "sin_acceso": 33
    }
   },
   {
    "clave": "12 · Nuevo Horizonte",
    "num": 12,
    "nombre": "Nuevo Horizonte",
-   "inmuebles": 149,
+   "inmuebles": 153,
    "no_habitables": 4,
-   "arp": 77,
+   "arp": 81,
    "cats": {
     "sin_dano": 66,
-    "menor": 72,
+    "menor": 76,
     "restringido": 2,
     "mayor": 3,
     "colapso": 1,
@@ -255,15 +255,15 @@
   }
  ],
  "rural": {
-  "inmuebles": 145,
-  "no_habitables": 75,
-  "arp": 117,
+  "inmuebles": 151,
+  "no_habitables": 76,
+  "arp": 122,
   "cats": {
    "sin_dano": 13,
-   "menor": 28,
+   "menor": 33,
    "restringido": 29,
    "mayor": 60,
-   "colapso": 15,
+   "colapso": 16,
    "seguro": 0,
    "sin_acceso": 0
   }
@@ -310,7 +310,7 @@
    ],
    [
     "2026-10-26",
-    1643
+    1642
    ],
    [
     "2026-11-02",
@@ -318,7 +318,7 @@
    ],
    [
     "2026-11-09",
-    704
+    915
    ]
   ],
   "lluvias": [
