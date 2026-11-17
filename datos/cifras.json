@@ -1,51 +1,51 @@
 {
- "corte": "2026-11-17T00:15:38.183Z",
+ "corte": "2026-11-17T13:15:57.761Z",
  "equipo": {
   "ingenieros": 49,
   "desde": "2026-09-18",
-  "hasta": "2026-11-16"
+  "hasta": "2026-11-17"
  },
  "inmuebles": {
-  "total": 5511,
-  "edificios": 4286,
-  "casas": 1225,
+  "total": 5536,
+  "edificios": 4307,
+  "casas": 1229,
   "por_categoria": {
-   "sin_dano": 1934,
-   "menor": 1661,
-   "restringido": 206,
-   "mayor": 746,
+   "sin_dano": 1944,
+   "menor": 1667,
+   "restringido": 209,
+   "mayor": 752,
    "colapso": 38,
    "seguro": 670,
    "sin_acceso": 256
   }
  },
  "arp": {
-  "requieren": 2613,
-  "no_requieren": 2604,
-  "con_presupuesto": 1544,
-  "crr": 19664880572,
-  "costos_directos": 17511353346,
+  "requieren": 2628,
+  "no_requieren": 2614,
+  "con_presupuesto": 1557,
+  "crr": 19750161923,
+  "costos_directos": 17588954632,
   "por_categoria": {
    "menor": {
-    "inmuebles": 1661,
-    "con_presupuesto": 871,
-    "crr": 5062136187
+    "inmuebles": 1667,
+    "con_presupuesto": 875,
+    "crr": 5078926768
    },
    "restringido": {
-    "inmuebles": 206,
-    "con_presupuesto": 160,
-    "crr": 1599497501
+    "inmuebles": 209,
+    "con_presupuesto": 163,
+    "crr": 1654957476
    },
    "mayor": {
-    "inmuebles": 746,
-    "con_presupuesto": 513,
-    "crr": 13003246884
+    "inmuebles": 752,
+    "con_presupuesto": 519,
+    "crr": 13016277679
    }
   },
   "revision": {
    "verificado": 97,
    "en_revision": 57,
-   "sin_revisar": 1390
+   "sin_revisar": 1403
   }
  },
  "comunas": [
@@ -53,12 +53,12 @@
    "clave": "01 · Atardeceres",
    "num": 1,
    "nombre": "Atardeceres",
-   "inmuebles": 1119,
+   "inmuebles": 1121,
    "no_habitables": 98,
-   "arp": 324,
+   "arp": 326,
    "cats": {
     "sin_dano": 350,
-    "menor": 212,
+    "menor": 214,
     "restringido": 14,
     "mayor": 98,
     "colapso": 0,
@@ -87,13 +87,13 @@
    "clave": "03 · Cumanday",
    "num": 3,
    "nombre": "Cumanday",
-   "inmuebles": 845,
+   "inmuebles": 849,
    "no_habitables": 156,
-   "arp": 415,
+   "arp": 419,
    "cats": {
     "sin_dano": 251,
-    "menor": 232,
-    "restringido": 36,
+    "menor": 233,
+    "restringido": 39,
     "mayor": 147,
     "colapso": 9,
     "seguro": 134,
@@ -121,11 +121,11 @@
    "clave": "05 · Ciudadela Del Norte",
    "num": 5,
    "nombre": "Ciudadela del Norte",
-   "inmuebles": 125,
+   "inmuebles": 126,
    "no_habitables": 3,
    "arp": 48,
    "cats": {
-    "sin_dano": 72,
+    "sin_dano": 73,
     "menor": 44,
     "restringido": 1,
     "mayor": 3,
@@ -138,12 +138,12 @@
    "clave": "06 · Ecoturístico Cerro De Oro",
    "num": 6,
    "nombre": "Ecoturístico Cerro de Oro",
-   "inmuebles": 640,
+   "inmuebles": 641,
    "no_habitables": 18,
-   "arp": 192,
+   "arp": 193,
    "cats": {
     "sin_dano": 349,
-    "menor": 161,
+    "menor": 162,
     "restringido": 13,
     "mayor": 18,
     "colapso": 0,
@@ -172,14 +172,14 @@
    "clave": "08 · Palogrande",
    "num": 8,
    "nombre": "Palogrande",
-   "inmuebles": 993,
-   "no_habitables": 183,
-   "arp": 705,
+   "inmuebles": 999,
+   "no_habitables": 189,
+   "arp": 711,
    "cats": {
     "sin_dano": 257,
     "menor": 473,
     "restringido": 51,
-    "mayor": 181,
+    "mayor": 187,
     "colapso": 2,
     "seguro": 12,
     "sin_acceso": 17
@@ -223,12 +223,12 @@
    "clave": "11 · La Macarena",
    "num": 11,
    "nombre": "La Macarena",
-   "inmuebles": 419,
+   "inmuebles": 420,
    "no_habitables": 102,
-   "arp": 215,
+   "arp": 216,
    "cats": {
     "sin_dano": 163,
-    "menor": 111,
+    "menor": 112,
     "restringido": 8,
     "mayor": 96,
     "colapso": 6,
@@ -240,12 +240,12 @@
    "clave": "12 · Nuevo Horizonte",
    "num": 12,
    "nombre": "Nuevo Horizonte",
-   "inmuebles": 154,
+   "inmuebles": 164,
    "no_habitables": 4,
-   "arp": 82,
+   "arp": 83,
    "cats": {
-    "sin_dano": 66,
-    "menor": 77,
+    "sin_dano": 75,
+    "menor": 78,
     "restringido": 2,
     "mayor": 3,
     "colapso": 1,
@@ -318,11 +318,11 @@
    ],
    [
     "2026-11-09",
-    915
+    916
    ],
    [
     "2026-11-16",
-    10
+    34
    ]
   ],
   "lluvias": [
