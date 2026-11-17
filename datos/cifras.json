@@ -1,51 +1,51 @@
 {
- "corte": "2026-11-15T23:06:17.844Z",
+ "corte": "2026-11-17T00:15:38.183Z",
  "equipo": {
   "ingenieros": 49,
   "desde": "2026-09-18",
-  "hasta": "2026-11-14"
+  "hasta": "2026-11-16"
  },
  "inmuebles": {
-  "total": 5501,
-  "edificios": 4277,
-  "casas": 1224,
+  "total": 5511,
+  "edificios": 4286,
+  "casas": 1225,
   "por_categoria": {
-   "sin_dano": 1933,
-   "menor": 1658,
-   "restringido": 204,
-   "mayor": 742,
+   "sin_dano": 1934,
+   "menor": 1661,
+   "restringido": 206,
+   "mayor": 746,
    "colapso": 38,
    "seguro": 670,
    "sin_acceso": 256
   }
  },
  "arp": {
-  "requieren": 2604,
-  "no_requieren": 2603,
-  "con_presupuesto": 1528,
-  "crr": 19364365412,
-  "costos_directos": 17245433086,
+  "requieren": 2613,
+  "no_requieren": 2604,
+  "con_presupuesto": 1544,
+  "crr": 19664880572,
+  "costos_directos": 17511353346,
   "por_categoria": {
    "menor": {
-    "inmuebles": 1658,
-    "con_presupuesto": 869,
-    "crr": 5048893023
+    "inmuebles": 1661,
+    "con_presupuesto": 871,
+    "crr": 5062136187
    },
    "restringido": {
-    "inmuebles": 204,
-    "con_presupuesto": 158,
-    "crr": 1594513135
+    "inmuebles": 206,
+    "con_presupuesto": 160,
+    "crr": 1599497501
    },
    "mayor": {
-    "inmuebles": 742,
-    "con_presupuesto": 501,
-    "crr": 12720959254
+    "inmuebles": 746,
+    "con_presupuesto": 513,
+    "crr": 13003246884
    }
   },
   "revision": {
    "verificado": 97,
    "en_revision": 57,
-   "sin_revisar": 1374
+   "sin_revisar": 1390
   }
  },
  "comunas": [
@@ -53,14 +53,14 @@
    "clave": "01 · Atardeceres",
    "num": 1,
    "nombre": "Atardeceres",
-   "inmuebles": 1117,
-   "no_habitables": 97,
-   "arp": 322,
+   "inmuebles": 1119,
+   "no_habitables": 98,
+   "arp": 324,
    "cats": {
     "sin_dano": 350,
     "menor": 212,
-    "restringido": 13,
-    "mayor": 97,
+    "restringido": 14,
+    "mayor": 98,
     "colapso": 0,
     "seguro": 368,
     "sin_acceso": 77
@@ -87,14 +87,14 @@
    "clave": "03 · Cumanday",
    "num": 3,
    "nombre": "Cumanday",
-   "inmuebles": 842,
-   "no_habitables": 155,
-   "arp": 412,
+   "inmuebles": 845,
+   "no_habitables": 156,
+   "arp": 415,
    "cats": {
     "sin_dano": 251,
-    "menor": 231,
-    "restringido": 35,
-    "mayor": 146,
+    "menor": 232,
+    "restringido": 36,
+    "mayor": 147,
     "colapso": 9,
     "seguro": 134,
     "sin_acceso": 36
@@ -104,14 +104,14 @@
    "clave": "04 · Estación",
    "num": 4,
    "nombre": "Estación",
-   "inmuebles": 584,
-   "no_habitables": 81,
-   "arp": 307,
+   "inmuebles": 585,
+   "no_habitables": 82,
+   "arp": 308,
    "cats": {
     "sin_dano": 241,
     "menor": 188,
     "restringido": 38,
-    "mayor": 81,
+    "mayor": 82,
     "colapso": 0,
     "seguro": 4,
     "sin_acceso": 32
@@ -172,14 +172,14 @@
    "clave": "08 · Palogrande",
    "num": 8,
    "nombre": "Palogrande",
-   "inmuebles": 990,
-   "no_habitables": 182,
-   "arp": 703,
+   "inmuebles": 993,
+   "no_habitables": 183,
+   "arp": 705,
    "cats": {
-    "sin_dano": 256,
-    "menor": 472,
+    "sin_dano": 257,
+    "menor": 473,
     "restringido": 51,
-    "mayor": 180,
+    "mayor": 181,
     "colapso": 2,
     "seguro": 12,
     "sin_acceso": 17
@@ -240,12 +240,12 @@
    "clave": "12 · Nuevo Horizonte",
    "num": 12,
    "nombre": "Nuevo Horizonte",
-   "inmuebles": 153,
+   "inmuebles": 154,
    "no_habitables": 4,
-   "arp": 81,
+   "arp": 82,
    "cats": {
     "sin_dano": 66,
-    "menor": 76,
+    "menor": 77,
     "restringido": 2,
     "mayor": 3,
     "colapso": 1,
@@ -319,6 +319,10 @@
    [
     "2026-11-09",
     915
+   ],
+   [
+    "2026-11-16",
+    10
    ]
   ],
   "lluvias": [
