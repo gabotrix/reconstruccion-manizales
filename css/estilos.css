@@ -607,3 +607,7 @@ tfoot td { font-weight: 700; border-bottom: 0; border-top: 2px solid var(--noche
 }
 
 [id] { scroll-margin-top: 92px; }
+
+/* 20-nov: el logo de Manizales del alma en la marca de la cabecera */
+.marca-logo { height: 48px; width: auto; padding-right: 14px; border-right: 2px solid var(--borde); }
+@media (max-width: 640px) { .marca-logo { height: 40px; padding-right: 10px; } }
