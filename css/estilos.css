@@ -541,3 +541,69 @@ tfoot td { font-weight: 700; border-bottom: 0; border-top: 2px solid var(--noche
   .valores, .impacto-cifras { grid-template-columns: 1fr; }
   .impacto { padding: 64px 0; }
 }
+
+/* ---------- 19-nov, segunda vuelta: cabecera blanca y portada de fundación (Julián: «ese menú está feo; que no se
+   parezca a la otra página; estilo ONG, gráfico, sencillo e impactante») ---------- */
+.encabezado { position: sticky; top: 0; z-index: 40; background: rgba(255, 255, 255, .97); border-bottom: 1px solid var(--borde);
+  -webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px); }
+.cab-barra { position: relative; display: flex; align-items: center; gap: 24px; min-height: 76px; }
+.encabezado .marca { color: var(--noche); }
+.encabezado .marca-txt span { color: var(--texto-2); }
+.encabezado .sello { border-radius: 50%; }
+.sello svg { width: 26px; height: 26px; stroke-width: 2.2; }
+.encabezado .nav { margin: 0 0 0 auto; }
+.encabezado .nav ul { display: flex; gap: 4px; padding: 0; background: none; border: 0; border-radius: 0; -webkit-backdrop-filter: none; backdrop-filter: none; }
+.encabezado .nav a { min-height: 44px; padding: 0 14px; border: 0; border-radius: 0; background: none; color: var(--noche);
+  font-size: 17px; font-weight: 600; white-space: nowrap; position: relative; }
+.encabezado .nav a::after { content: ""; position: absolute; left: 14px; right: 14px; bottom: 6px; height: 3px; border-radius: 3px; background: var(--amarillo);
+  transform: scaleX(0); transition: transform .2s ease; }
+.encabezado .nav a:hover { background: none; }
+.encabezado .nav a:hover::after, .encabezado .nav a:focus-visible::after { transform: scaleX(1); }
+.encabezado .barra-cta { border-radius: 999px; }
+.encabezado .menu { border-color: var(--borde); background: var(--fondo); color: var(--noche); }
+.encabezado :focus-visible { outline-color: var(--azul); }
+
+.heroe { background: var(--noche) url(../img/manizales.jpg) center 60% / cover no-repeat; color: var(--blanco); }
+.heroe-velo { background: linear-gradient(90deg, rgba(11, 26, 51, .92) 0%, rgba(11, 26, 51, .7) 55%, rgba(11, 26, 51, .25) 100%); }
+.heroe-cuerpo { padding-top: 110px; padding-bottom: 150px; }
+.heroe-antes { display: inline-block; margin: 0 0 18px; font-size: 16px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--amarillo); }
+.heroe h1 { color: var(--blanco); font-size: clamp(44px, 6.4vw, 88px); font-weight: 700; line-height: 1; letter-spacing: -.03em; margin: 0 0 24px; max-width: 12ch; }
+.resalta { color: var(--amarillo); }
+.heroe .lead { font-size: 20px; max-width: 34em; color: rgba(255, 255, 255, .92); }
+.heroe .boton { border-radius: 999px; min-height: 56px; padding: 0 28px; }
+.heroe .aviso-123 { border-radius: 999px; }
+.heroe :focus-visible { outline-color: var(--amarillo); }
+
+.heroe-cifras { position: relative; z-index: 2; margin: -84px 0 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr));
+  background: var(--blanco); border-radius: 24px; box-shadow: 0 24px 48px rgba(15, 36, 71, .18); overflow: hidden; }
+.heroe-cifras li { display: grid; grid-template-columns: auto 1fr; grid-template-rows: auto auto; column-gap: 18px; align-items: center; padding: 30px 32px; }
+.heroe-cifras li + li { border-left: 1px solid var(--borde); }
+.hc-ic { grid-row: 1 / 3; width: 64px; height: 64px; display: grid; place-items: center; border-radius: 50%; background: var(--amarillo); color: var(--noche); }
+.hc-ic svg { width: 30px; height: 30px; }
+.heroe-cifras b { font-size: clamp(36px, 4vw, 52px); font-weight: 700; line-height: 1; color: var(--noche); letter-spacing: -.02em; font-variant-numeric: tabular-nums; }
+.heroe-cifras span:not(.hc-ic) { font-size: 17px; color: var(--texto-2); }
+.heroe-corte { margin: 14px 0 0; text-align: center; font-size: 15px; color: var(--texto-2); }
+
+@media (max-width: 1180px) {
+  .encabezado .nav { display: none; margin: 0; }
+  .encabezado .barra-cta { margin-left: auto; }
+  .encabezado .nav.abierta { display: block; position: absolute; top: 100%; left: 0; right: 0; z-index: 30; }
+  .encabezado .nav.abierta ul { flex-direction: column; gap: 0; padding: 8px 16px 16px; background: var(--blanco); border-bottom: 1px solid var(--borde); box-shadow: var(--sombra); }
+  .encabezado .nav.abierta a { min-height: 52px; font-size: 18px; padding: 0 4px; }
+  .encabezado .nav.abierta a::after { left: 4px; right: auto; width: 40px; }
+}
+@media (max-width: 760px) {
+  .heroe-cifras { grid-template-columns: 1fr; margin-top: -60px; }
+  .heroe-cifras li { padding: 20px 22px; }
+  .heroe-cifras li + li { border-left: 0; border-top: 1px solid var(--borde); }
+  .heroe-cuerpo { padding-top: 64px; padding-bottom: 104px; }
+  .heroe-velo { background: linear-gradient(180deg, rgba(11, 26, 51, .9) 0%, rgba(11, 26, 51, .8) 100%); }
+}
+@media (max-width: 640px) {
+  .encabezado .barra-cta { display: none; }
+  .encabezado .menu { margin-left: auto; }
+  .cab-barra { min-height: 68px; gap: 12px; }
+  .heroe .lead { font-size: 18px; }
+}
+
+[id] { scroll-margin-top: 92px; }
