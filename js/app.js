@@ -75,6 +75,10 @@
     dato('expedientes', fmt(D.expedientes)); dato('demolidas', fmt(D.demolidas)); dato('por_municipio', fmt(D.por_municipio)); dato('por_particular', fmt(D.por_particular));
     dato('viviendas', fmt(C.familias.viviendas)); dato('personas', fmt(C.familias.personas)); dato('lluvias', fmt(C.lluvias.visitas));
     dato('g-hab', fmt(G.hab)); dato('g-noh', fmt(G.noh)); dato('g-sin', fmt(G.sin));
+    // (19-nov) las barras de «Así avanzamos»: el ancho se pone por el DOM (la CSP no deja style="" en el HTML)
+    dato('g-con', fmt(T - G.sin));
+    const av = { visitas: T ? (T - G.sin) / T : 0, presupuesto: A.requieren ? A.con_presupuesto / A.requieren : 0, demoliciones: D.expedientes ? D.demolidas / D.expedientes : 0 };
+    $$('[data-avance]').forEach(e => { e.style.width = Math.round(100 * Math.max(0, Math.min(1, av[e.dataset.avance] || 0))) + '%'; });
 
     // la tira de tres grupos y las categorías
     const tira = $('#tira');

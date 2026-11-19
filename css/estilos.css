@@ -611,3 +611,115 @@ tfoot td { font-weight: 700; border-bottom: 0; border-top: 2px solid var(--noche
 /* 20-nov: el logo de Manizales del alma en la marca de la cabecera */
 .marca-logo { height: 48px; width: auto; padding-right: 14px; border-right: 2px solid var(--borde); }
 @media (max-width: 640px) { .marca-logo { height: 40px; padding-right: 10px; } }
+
+/* ================= 19-nov: estilo de fundación (Julián eligió la prueba inspirada en la plantilla que le gustó) =================
+   Clases con prefijo f- para no chocar con las de antes. Acento escrito a mano (Caveat), bordes rasgados, mancha amarilla,
+   fotos en blanco y negro que se colorean al pasar, barras de avance y preguntas frecuentes. */
+:root { --crema: #fff8e1; --arena: #f5f3ee; --linea: #e7e2d6; }
+.f-tope { background: var(--noche-2); color: #fff; font-size: 15px; }
+.f-tope .envoltura { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; padding-top: 8px; padding-bottom: 8px; }
+.f-tope b { color: var(--amarillo); }
+.f-mano { font-family: 'Caveat', cursive; font-weight: 700; color: var(--amarillo); font-size: 30px; line-height: 1; display: inline-flex; align-items: center; gap: 8px; margin: 0 0 6px; }
+.f-mano svg { width: 26px; height: 26px; }
+.f-mano.azul { color: var(--azul); }
+.f-portada .boton, .f-llamado .boton { border-radius: 999px; min-height: 56px; padding: 0 28px; }
+.f-acciones { display: flex; gap: 14px; flex-wrap: wrap; margin-top: 26px; }
+.f-portada { background: var(--noche); color: #fff; overflow: hidden; }
+.f-portada-g { display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, .95fr); gap: 40px; align-items: center; padding-top: 70px; padding-bottom: 110px; }
+.f-portada h1 { color: #fff; font-size: clamp(40px, 5.2vw, 72px); font-weight: 800; line-height: 1.06; letter-spacing: -.02em; margin: 8px 0 22px; }
+.f-sub { color: var(--amarillo); background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 12' preserveAspectRatio='none'%3E%3Cpath d='M2 9C40 2 120 1 198 7' stroke='%23fcc419' stroke-width='4' fill='none' stroke-linecap='round'/%3E%3C/svg%3E") bottom / 100% 12px no-repeat; padding-bottom: 8px; }
+.f-lead { color: rgba(255, 255, 255, .9); font-size: 20px; max-width: 32em; }
+.f-collage { position: relative; height: 520px; }
+.f-mancha { position: absolute; right: -60px; top: -30px; width: 470px; height: 470px; background: var(--amarillo); border-radius: 46% 54% 38% 62% / 55% 38% 62% 45%; }
+.f-collage img { position: absolute; object-fit: cover; border: 8px solid #fff; box-shadow: 0 20px 40px rgba(0, 0, 0, .3); filter: grayscale(1) contrast(1.05); }
+.f-c1 { width: 330px; height: 400px; right: 40px; top: 30px; border-radius: 180px 180px 24px 24px; }
+.f-c2 { width: 210px; height: 210px; left: 10px; bottom: 10px; border-radius: 50%; filter: none !important; }
+.f-c3 { width: 170px; height: 220px; right: -10px; bottom: -20px; border-radius: 24px; }
+.f-flota { position: absolute; left: 40px; top: 60px; background: #fff; color: var(--noche); border-radius: 18px; padding: 16px 20px; box-shadow: 0 18px 36px rgba(0, 0, 0, .25); display: flex; gap: 14px; align-items: center; }
+.f-flota-ic { width: 50px; height: 50px; border-radius: 50%; background: var(--amarillo); display: grid; place-items: center; }
+.f-flota-ic svg { width: 26px; height: 26px; color: var(--noche); }
+.f-flota b { font-size: 30px; display: block; line-height: 1; }
+.f-flota span { font-size: 15px; color: var(--texto-2); }
+.f-corazon { position: absolute; left: 46%; top: 8px; width: 70px; color: var(--amarillo); stroke-width: 3; }
+.f-rasgado { display: block; width: 100%; height: 46px; margin-top: -45px; position: relative; z-index: 2; fill: #fff; stroke: none; }
+.f-cabeza { text-align: center; max-width: 780px; margin: 0 auto 46px; }
+.f-cabeza h2, .f-h2 { font-size: clamp(30px, 3.8vw, 46px); font-weight: 800; line-height: 1.15; margin-bottom: 14px; }
+.f-h2 { margin: 6px 0 26px; }
+.f-cabeza h2 em, .f-h2 em { font-style: normal; color: var(--azul); background: linear-gradient(transparent 62%, #ffd84d 62%); }
+.f-tarjetas { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 26px; }
+.f-tarjeta { background: #fff; border-radius: 26px; padding: 34px 28px; text-align: center; border: 2px dashed var(--linea); transition: border-color .2s; }
+.f-tarjeta:hover { border-color: var(--amarillo); }
+.f-ic { width: 86px; height: 86px; margin: 0 auto 18px; border-radius: 50%; display: grid; place-items: center; background: var(--crema); outline: 2px dashed var(--amarillo); outline-offset: 6px; }
+.f-ic svg { width: 40px; height: 40px; color: var(--noche); stroke-width: 1.8; }
+.f-tarjeta h3, .f-causa h3 { font-size: 22px; font-weight: 700; margin-bottom: 10px; }
+.f-tarjeta p { margin: 0; }
+.f-causas { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 26px; }
+.f-causa { background: #fff; border-radius: 26px; overflow: hidden; box-shadow: 0 12px 30px rgba(15, 36, 71, .08); display: flex; flex-direction: column; }
+.f-causa img { height: 220px; width: 100%; object-fit: cover; filter: grayscale(.85); transition: filter .3s; }
+.f-causa:hover img { filter: none; }
+.f-cu { padding: 24px 26px 28px; display: flex; flex-direction: column; gap: 8px; flex: 1; }
+.f-cu p { margin: 0; }
+.f-etiqueta { align-self: flex-start; background: var(--crema); color: var(--azul); font-weight: 700; font-size: 15px; padding: 4px 14px; border-radius: 999px; }
+.f-barra { height: 12px; border-radius: 999px; background: #ece7da; overflow: hidden; margin-top: auto; }
+.f-barra i { display: block; height: 100%; width: 0; border-radius: 999px; background: var(--amarillo); transition: width .8s ease; }
+.f-avance { display: flex; justify-content: space-between; gap: 10px; font-size: 16px; }
+.f-avance b { color: var(--noche); font-size: 18px; }
+.f-banda { background: var(--amarillo); position: relative; }
+.f-banda-g { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 20px; padding-top: 68px; padding-bottom: 68px; }
+.f-banda-g li { text-align: center; }
+.f-banda-g b { display: block; font-size: clamp(40px, 4.6vw, 60px); font-weight: 800; color: var(--noche); line-height: 1; letter-spacing: -.02em; font-variant-numeric: tabular-nums; }
+.f-banda-g span { color: var(--noche); font-weight: 500; font-size: 17px; }
+.f-ras-a, .f-ras-b { position: absolute; left: 0; width: 100%; height: 26px; stroke: none; }
+.f-ras-a { top: -1px; fill: var(--fondo); }
+.f-ras-b { bottom: -1px; transform: rotate(180deg); fill: var(--fondo); }
+.f-equipo { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 22px; }
+.f-rol { border-radius: 26px; padding: 30px 22px; color: #fff; background: var(--noche); position: relative; overflow: hidden; min-height: 240px; display: flex; flex-direction: column; justify-content: flex-end; }
+.f-rol:nth-child(2) { background: var(--azul); }
+.f-rol:nth-child(3) { background: var(--amarillo); color: var(--noche); }
+.f-rol:nth-child(4) { background: #23344f; }
+.f-rol svg { position: absolute; right: 18px; top: 18px; width: 54px; height: 54px; stroke-width: 1.6; }
+.f-rol b { font-size: 46px; font-weight: 800; line-height: 1; }
+.f-rol h3 { color: inherit; font-size: 21px; font-weight: 700; margin: 6px 0 4px; }
+.f-rol p { color: inherit; opacity: .88; font-size: 16px; margin: 0; }
+.f-faq { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); gap: 50px; align-items: start; }
+.f-faq-foto { position: relative; margin: 0; }
+.f-faq-foto img { border-radius: 30px; height: 560px; width: 100%; object-fit: cover; filter: grayscale(1); }
+.f-faq-foto figcaption { position: absolute; right: -20px; bottom: 30px; background: var(--noche); color: #fff; border-radius: 22px; padding: 20px 24px; max-width: 270px; box-shadow: 0 18px 36px rgba(0, 0, 0, .25); font-size: 16px; line-height: 1.4; }
+.f-faq-foto figcaption b { color: var(--amarillo); font-size: 34px; display: block; line-height: 1.1; }
+.f-faq details { background: #fff; border-radius: 18px; margin-bottom: 12px; border: 1px solid var(--linea); }
+.f-faq summary { list-style: none; cursor: pointer; padding: 18px 22px; font-weight: 700; font-size: 18px; color: var(--noche); display: flex; justify-content: space-between; gap: 12px; align-items: center; }
+.f-faq summary::-webkit-details-marker { display: none; }
+.f-faq summary::after { content: "+"; width: 30px; height: 30px; flex: none; border-radius: 50%; background: var(--amarillo); display: grid; place-items: center; font-size: 22px; line-height: 1; }
+.f-faq details[open] summary::after { content: "\2013"; }
+.f-faq details[open] { border-color: var(--amarillo); box-shadow: 0 10px 24px rgba(15, 36, 71, .08); }
+.f-faq details p { padding: 0 22px 18px; margin: 0; }
+.f-faq a { color: var(--azul); font-weight: 600; }
+.f-sin-arriba { padding-top: 0; }
+.f-llamado { background: var(--noche); color: #fff; border-radius: 32px; padding: 54px; display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(0, .7fr); gap: 30px; align-items: center; position: relative; overflow: hidden; }
+.f-llamado::before { content: ""; position: absolute; right: -80px; top: -80px; width: 280px; height: 280px; border-radius: 50%; background: var(--amarillo); }
+.f-llamado h2 { color: #fff; font-size: clamp(28px, 3.2vw, 42px); font-weight: 800; }
+.f-llamado .f-acciones { position: relative; justify-content: flex-end; margin: 0; }
+@media (max-width: 980px) {
+  .f-portada-g, .f-faq, .f-llamado { grid-template-columns: minmax(0, 1fr); }
+  .f-collage { height: 420px; } .f-mancha { width: 360px; height: 360px; }
+  .f-tarjetas, .f-causas { grid-template-columns: minmax(0, 1fr); }
+  .f-banda-g, .f-equipo { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .f-llamado .f-acciones { justify-content: flex-start; }
+  .f-faq-foto figcaption { right: 12px; }
+  .f-faq-foto img { height: 380px; }
+}
+@media (max-width: 560px) {
+  .f-banda-g, .f-equipo { grid-template-columns: minmax(0, 1fr); }
+  .f-portada-g { padding-top: 44px; }
+  .f-lead { font-size: 18px; }
+  .f-c1 { width: 240px; height: 300px; right: 10px; } .f-c3 { display: none; } .f-c2 { width: 150px; height: 150px; }
+  .f-flota { left: 0; top: 10px; }
+  .f-llamado { padding: 34px 24px; }
+  .f-tope .envoltura span:last-child { display: none; }
+}
+
+.encabezado .marca-txt b { white-space: nowrap; }
+/* las secciones de antes, con el mismo acento: rótulo escrito a mano y títulos en negrita */
+.rotulo { font-family: 'Caveat', cursive; font-weight: 700; font-size: 30px; line-height: 1; letter-spacing: 0; text-transform: none; border: 0; padding: 0; margin-bottom: 10px; color: var(--azul); }
+.rotulo.claro { color: var(--amarillo); }
+.seccion h2 { font-weight: 800; }

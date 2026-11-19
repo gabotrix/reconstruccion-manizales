@@ -12,14 +12,14 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23fcc419'/%3E%3Ctext x='32' y='42' font-family='Arial' font-weight='700' font-size='26' text-anchor='middle' fill='%230f2447'%3EMC%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700;9..40,800&family=Caveat:wght@700&display=swap">
 <link rel="stylesheet" href="css/estilos.css">
 <script src="js/app.js" defer></script>
 </head>
 <body>
-<a class="saltar" href="#cifras">Saltar a las cifras</a>
+<a class="saltar" href="#avance">Saltar al avance</a>
 
-<!-- ============ PORTADA ============ -->
+<div class="f-tope"><div class="envoltura"><span>Si hay peligro, salga de la vivienda y llame a la <b>línea 123</b></span><span>Cifras al <b data-dato="corte">19 de noviembre de 2026</b> · se actualizan cada hora</span></div></div>
 <header class="encabezado" id="inicio">
   <div class="envoltura cab-barra">
     <a class="marca" href="#inicio" aria-label="Plan de Recuperación Manizales, inicio">
@@ -29,10 +29,9 @@
     <nav class="nav" id="nav" aria-label="Secciones">
       <ul>
         <li><a href="#mision">El plan</a></li>
-        <li><a href="#impacto">Lo logrado</a></li>
-        <li><a href="#cifras">Cifras</a></li>
+        <li><a href="#avance">Avance</a></li>
         <li><a href="#comunas">Comunas</a></li>
-        <li><a href="#ayudas">Ayudas</a></li>
+        <li><a href="#ayudas">Preguntas</a></li>
         <li><a href="#licencias">Licencias</a></li>
         <li class="solo-movil"><a href="ventanilla/">Ventanilla única</a></li>
       </ul>
@@ -44,36 +43,29 @@
   </div>
 </header>
 
-<!-- ============ PORTADA (19-nov: tono de fundación, gráfica y sencilla) ============ -->
-<section class="heroe" aria-labelledby="h-inicio">
-  <div class="heroe-velo">
-    <div class="envoltura heroe-cuerpo">
-      <p class="heroe-antes">Juntos reconstruimos nuestra ciudad</p>
-      <h1 id="h-inicio">Plan de Recuperación <span class="resalta">Manizales</span></h1>
-      <p class="lead">Después del sismo del 10 de agosto de 2026, nadie se queda solo. La Alcaldía, Infimanizales y Camacol Caldas acompañamos a cada familia: visitamos su hogar, revisamos los daños y la ayudamos a reparar.</p>
-      <div class="acciones">
-        <a class="boton amarillo" href="#impacto">Ver cómo avanzamos
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M19 12l-7 7-7-7"/></svg></a>
+<!-- ============ PORTADA (19-nov: estilo de fundación) ============ -->
+<section class="f-portada" aria-labelledby="h-inicio">
+  <div class="envoltura f-portada-g">
+    <div>
+      <p class="f-mano"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 14c1.5-1.5 3-3.2 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.8 0-3 .5-4.5 2-1.5-1.5-2.7-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4 3 5.5l7 7z"/></svg>Juntos por Manizales</p>
+      <h1 id="h-inicio">Plan de Recuperación: <span class="f-sub">Manizales se levanta</span></h1>
+      <p class="f-lead">Después del sismo del 10 de agosto de 2026, nadie se queda solo. La Alcaldía, Infimanizales y Camacol Caldas acompañamos a cada familia: visitamos su hogar, revisamos los daños y la ayudamos a reparar.</p>
+      <div class="f-acciones">
+        <a class="boton amarillo" href="#avance">Ver cómo avanzamos <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
         <a class="boton blanco" href="#licencias">Licencia de construcción</a>
       </div>
-      <p class="aviso-123">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 9v4M12 17h.01"/><path d="M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/></svg>
-        <span><b>Si hay peligro:</b> salga de la vivienda y llame a la <b>línea 123</b>.</span>
-      </p>
+    </div>
+    <div class="f-collage" aria-hidden="true">
+      <div class="f-mancha"></div>
+      <svg class="f-corazon" viewBox="0 0 80 60"><path d="M10 40C-6 18 26 2 40 22 54 2 86 18 70 40 60 52 44 56 40 58"/></svg>
+      <img class="f-c1" src="img/fotos/inspector-ventana.jpg" alt="" width="1600" height="2400">
+      <img class="f-c2" src="img/fotos/ingeniera-obra.jpg" alt="" width="1600" height="1068">
+      <img class="f-c3" src="img/fotos/casa-centro.jpg" alt="" width="1280" height="863">
+      <div class="f-flota"><span class="f-flota-ic"><svg viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.9M16 3.1a4 4 0 0 1 0 7.8"/></svg></span><div><b data-dato="personas">13.139</b><span>personas acompañadas</span></div></div>
     </div>
   </div>
 </section>
-<div class="envoltura">
-  <ul class="heroe-cifras" aria-label="La recuperación hoy">
-    <li><span class="hc-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.9M16 3.1a4 4 0 0 1 0 7.8"/></svg></span>
-      <b data-dato="personas">13.139</b><span>personas acompañadas</span></li>
-    <li><span class="hc-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 18h18M5 18v-3a7 7 0 0 1 14 0v3M10 8V5h4v3"/></svg></span>
-      <b data-dato="total">4.763</b><span>hogares visitados</span></li>
-    <li><span class="hc-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21h18M5 21V8l7-5 7 5v13"/><path d="M9 21v-6h6v6"/></svg></span>
-      <b data-dato="arp">2.115</b><span>hogares que se reparan</span></li>
-  </ul>
-  <p class="heroe-corte">Cifras al <b data-dato="corte">19 de noviembre de 2026</b> · se actualizan cada mañana</p>
-</div>
+<svg class="f-rasgado" viewBox="0 0 1440 46" preserveAspectRatio="none" aria-hidden="true"><path d="M0 46V18l40 8 38-14 44 12 30-16 52 18 36-10 48 12 40-16 46 14 34-8 52 16 40-14 44 10 36-18 50 16 42-6 38 12 46-16 40 10 52-12 36 16 44-14 40 8 48-12 34 14 50-10 42 12 38-16 46 14V46z"/></svg>
 
 <main>
   <!-- ============ ALIANZA ============ -->
@@ -88,79 +80,53 @@
     </div>
   </section>
 
-  <!-- ============ LA MISIÓN (estilo de fundación: por qué existe el plan) ============ -->
-  <section class="seccion mision" id="mision" aria-labelledby="h-mision">
+  <!-- ============ NUESTRO PROPÓSITO ============ -->
+  <section class="seccion" id="mision" aria-labelledby="h-mision">
     <div class="envoltura">
-      <div class="cabeza centro">
-        <p class="rotulo">Nuestro propósito</p>
-        <h2 id="h-mision">Que cada familia vuelva a vivir tranquila en su casa</h2>
+      <div class="f-cabeza">
+        <p class="f-mano azul">Nuestro propósito</p>
+        <h2 id="h-mision">Que cada familia vuelva a vivir <em>tranquila en su casa</em></h2>
         <p>El sismo nos golpeó a todos. Por eso la recuperación es un trabajo de ciudad: instituciones, ingenieros, gerentes de zona y vecinos, juntos, casa por casa.</p>
       </div>
-      <ul class="valores">
-        <li class="valor">
-          <span class="valor-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 14c1.5-1.5 3-3.2 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.8 0-3 .5-4.5 2-1.5-1.5-2.7-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4 3 5.5l7 7z"/></svg></span>
-          <h3>Acompañamos a cada familia</h3>
-          <p>Un equipo social y gerentes de zona escuchan a cada hogar, le explican sus opciones y le acompañan en cada paso.</p>
-        </li>
-        <li class="valor">
-          <span class="valor-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 18h18M5 18v-3a7 7 0 0 1 14 0v3M10 8V5h4v3"/></svg></span>
-          <h3>Revisamos cada vivienda</h3>
-          <p>Ingenieros y arquitectos visitan predio por predio para saber si la casa es segura y qué necesita para repararse.</p>
-        </li>
-        <li class="valor">
-          <span class="valor-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21h18M5 21V8l7-5 7 5v13"/><path d="M9 21v-6h6v6"/></svg></span>
-          <h3>Reconstruimos más seguro</h3>
-          <p>Las reparaciones y las nuevas obras siguen las normas de construcción, para que Manizales quede mejor que antes.</p>
-        </li>
-        <li class="valor">
-          <span class="valor-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
-          <h3>Rendimos cuentas cada día</h3>
-          <p>Las cifras de esta página se actualizan todas las mañanas, sin datos personales, para que cualquiera pueda ver el avance.</p>
-        </li>
+      <ul class="f-tarjetas">
+        <li class="f-tarjeta"><span class="f-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 14c1.5-1.5 3-3.2 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.8 0-3 .5-4.5 2-1.5-1.5-2.7-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4 3 5.5l7 7z"/></svg></span><h3>Acompañamos a cada familia</h3><p>Un equipo social y gerentes de zona escuchan a cada hogar y le explican sus opciones.</p></li>
+        <li class="f-tarjeta"><span class="f-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 18h18M5 18v-3a7 7 0 0 1 14 0v3M10 8V5h4v3"/></svg></span><h3>Revisamos cada vivienda</h3><p>Ingenieros y arquitectos visitan predio por predio para saber qué necesita cada casa.</p></li>
+        <li class="f-tarjeta"><span class="f-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21h18M5 21V8l7-5 7 5v13"/><path d="M9 21v-6h6v6"/></svg></span><h3>Reparamos con transparencia</h3><p>El aporte de la Alcaldía se calcula con precios públicos, y esta página rinde cuentas cada hora.</p></li>
       </ul>
     </div>
   </section>
 
-  <!-- ============ LO LOGRADO ============ -->
-  <section class="impacto" id="impacto" aria-labelledby="h-impacto">
+  <!-- ============ ASÍ AVANZAMOS (barras de avance) ============ -->
+  <section class="seccion fondo" id="avance" aria-labelledby="h-avance">
     <div class="envoltura">
-      <div class="impacto-cabeza">
-        <p class="rotulo claro">Lo que hemos logrado juntos</p>
-        <h2 id="h-impacto">Cada número es una familia que no está sola</h2>
+      <div class="f-cabeza">
+        <p class="f-mano azul">Así avanzamos</p>
+        <h2 id="h-avance">Tres frentes de trabajo, <em>un mismo objetivo</em></h2>
       </div>
-      <ul class="impacto-cifras">
-        <li><b data-dato="personas">13.139</b><span>personas acompañadas en <span data-dato="viviendas">7.801</span> viviendas registradas</span></li>
-        <li><b data-dato="total">4.763</b><span>hogares e inmuebles visitados por un ingeniero</span></li>
-        <li><b data-dato="arp">2.115</b><span>viviendas en camino a su reparación con el aporte de la Alcaldía</span></li>
-        <li><b data-dato="ingenieros">37</b><span>ingenieros y arquitectos recorriendo la ciudad</span></li>
-      </ul>
-      <ul class="galeria" aria-label="Imágenes de la recuperación">
-        <li><figure><img src="img/fotos/ingeniera-obra.jpg" alt="Una ingeniera con casco revisa el interior de una vivienda" width="1600" height="1068" loading="lazy"><figcaption>Revisamos cada vivienda por dentro</figcaption></figure></li>
-        <li><figure><img src="img/fotos/casa-centro.jpg" alt="Fachada de una casa del centro histórico de Manizales" width="1280" height="863" loading="lazy"><figcaption>Cuidamos el patrimonio de la ciudad</figcaption></figure></li>
-        <li><figure><img src="img/fotos/ingeniera-planos.jpg" alt="Una ingeniera toma notas en su planilla durante la revisión" width="1600" height="1068" loading="lazy"><figcaption>Medimos lo que hay que reparar</figcaption></figure></li>
-        <li><figure><img src="img/fotos/catedral.jpg" alt="Fachada de la catedral basílica de Manizales" width="1280" height="1707" loading="lazy"><figcaption>Manizales del alma se levanta</figcaption></figure></li>
+      <ul class="f-causas">
+        <li class="f-causa"><img src="img/fotos/ingeniera-planos.jpg" alt="Una ingeniera toma notas durante una visita" width="1600" height="1068" loading="lazy"><div class="f-cu"><span class="f-etiqueta">Visitas técnicas</span><h3>Revisar cada vivienda afectada</h3>
+          <p>Un ingeniero define si la casa se puede habitar y qué hay que reparar.</p>
+          <div class="f-barra" aria-hidden="true"><i data-avance="visitas"></i></div><p class="f-avance"><span><b data-dato="total">5.956</b> visitadas</span><span><b data-dato="g-con">5.053</b> con resultado</span></p></div></li>
+        <li class="f-causa"><img src="img/fotos/casa-centro.jpg" alt="Fachada de una casa del centro de Manizales" width="1280" height="863" loading="lazy"><div class="f-cu"><span class="f-etiqueta">Reparación</span><h3>Presupuestos para reparar</h3>
+          <p>Cada vivienda que se repara con el aporte necesita su presupuesto de obra.</p>
+          <div class="f-barra" aria-hidden="true"><i data-avance="presupuesto"></i></div><p class="f-avance"><span><b data-dato="con_presupuesto">1.697</b> con presupuesto</span><span>de <b data-dato="arp">2.798</b></span></p></div></li>
+        <li class="f-causa"><img src="img/fotos/carrera-22.jpg" alt="Carrera 22 de Manizales con la catedral al fondo" width="1280" height="960" loading="lazy"><div class="f-cu"><span class="f-etiqueta">Demoliciones</span><h3>Atender lo que no se puede salvar</h3>
+          <p>Cada demolición pasa por cinco fases antes de ejecutarse, con el municipio o el propietario.</p>
+          <div class="f-barra" aria-hidden="true"><i data-avance="demoliciones"></i></div><p class="f-avance"><span><b data-dato="demolidas">57</b> demolidas</span><span>de <b data-dato="expedientes">360</b> expedientes</span></p></div></li>
       </ul>
     </div>
   </section>
 
-  <!-- ============ SOBRE LAS VISITAS ============ -->
-  <section class="seccion" id="visitas" aria-labelledby="h-visitas">
-    <div class="envoltura sobre">
-      <p class="rotulo">Sobre las visitas</p>
-      <div class="sobre-texto">
-        <h2 id="h-visitas">Un ingeniero en cada predio, para saber qué necesita cada vivienda</h2>
-        <p>Desde el <span data-dato="desde">18 de septiembre de 2026</span>, el equipo de la alianza visita los inmuebles afectados. Revisa la estructura, los muros y las instalaciones, define si se puede habitar y mide lo que hay que reparar.</p>
-        <a class="boton azul" href="#resultados">Ver lo que encontramos</a>
-        <ul class="mosaicos">
-          <li><b data-dato="total">4.763</b><span>inmuebles valorados</span></li>
-          <li><b data-dato="ingenieros">37</b><span>ingenieros en la calle</span></li>
-          <li><b data-dato="edificios">3.712</b><span>en edificios</span></li>
-          <li><b data-dato="casas">1.051</b><span>casas</span></li>
-        </ul>
-        <p class="nota">Un edificio es un predio con más de una vivienda, apartamento o local. Cada inmueble cuenta una vez, aunque haya tenido más de una visita.</p>
-      </div>
-      <figure class="foto foto-alta"><img src="img/fotos/inspector-ventana.jpg" alt="Un inspector con casco amarillo y chaleco reflectivo revisa una ventana con su planilla en la mano" width="1600" height="2400" loading="lazy"></figure>
-    </div>
+  <!-- ============ BANDA AMARILLA ============ -->
+  <section class="f-banda" aria-label="La recuperación en cifras">
+    <svg class="f-ras-a" viewBox="0 0 1440 26" preserveAspectRatio="none" aria-hidden="true"><path d="M0 0h1440v10l-40 8-44-10-38 12-50-8-42 10-36-12-48 10-40-6-46 12-34-10-52 8-40-12-44 10-36-6-50 12-42-10-38 8-46-12-40 10-52-8-36 12-44-10-40 6-48-10-34 12-50-8-42 10-38-12-46 10-40-8z"/></svg>
+    <ul class="envoltura f-banda-g">
+      <li><b data-dato="personas">13.139</b><span>personas acompañadas</span></li>
+      <li><b data-dato="viviendas">7.801</b><span>viviendas registradas</span></li>
+      <li><b data-dato="total">5.956</b><span>hogares visitados</span></li>
+      <li><b data-dato="arp">2.798</b><span>hogares que se reparan</span></li>
+    </ul>
+    <svg class="f-ras-b" viewBox="0 0 1440 26" preserveAspectRatio="none" aria-hidden="true"><path d="M0 0h1440v10l-40 8-44-10-38 12-50-8-42 10-36-12-48 10-40-6-46 12-34-10-52 8-40-12-44 10-36-6-50 12-42-10-38 8-46-12-40 10-52-8-36 12-44-10-40 6-48-10-34 12-50-8-42 10-38-12-46 10-40-8z"/></svg>
   </section>
 
   <!-- ============ LAS CIFRAS ============ -->
@@ -169,7 +135,7 @@
       <div class="cabeza">
         <p class="rotulo">Las cifras del día</p>
         <h2 id="h-cifras">La reconstrucción, en números</h2>
-        <p>Lo que se sabe hoy sobre la reparación, las demoliciones, las familias registradas y las lluvias. Se actualiza cada mañana.</p>
+        <p>Lo que se sabe hoy sobre la reparación, las demoliciones, las familias registradas y las lluvias. Se actualiza cada hora.</p>
       </div>
       <div class="cifras">
         <div class="cifra">
@@ -355,81 +321,38 @@
     </div>
   </section>
 
-  <!-- ============ AYUDAS ============ -->
-  <section class="seccion fondo" id="ayudas" aria-labelledby="h-ayudas">
+  <!-- ============ EL EQUIPO ============ -->
+  <section class="seccion" id="equipo" aria-labelledby="h-equipo">
     <div class="envoltura">
-      <div class="cabeza dos">
-        <div>
-          <p class="rotulo">Ayudas y qué hacer</p>
-          <h2 id="h-ayudas">¿Su vivienda fue afectada? Esto es lo que puede hacer</h2>
-        </div>
-        <div>
-          <p class="borrador">Borrador: pendiente de validación</p>
-          <p>Estos pasos todavía los está revisando la alianza. Antes de hacer un trámite, confírmelo en la Alcaldía de Manizales.</p>
-        </div>
+      <div class="f-cabeza">
+        <p class="f-mano azul">Quiénes lo hacen posible</p>
+        <h2 id="h-equipo">Un equipo en la calle, <em>todos los días</em></h2>
       </div>
-      <ul class="servicios ayudas">
-        <li class="servicio ayuda peligro">
-          <div class="cabecera" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 9v4M12 17h.01"/><path d="M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/></svg></div>
-          <div class="s-tarjeta">
-            <span class="s-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg></span>
-            <h3>Si hay peligro, llame a la 123</h3>
-            <p>Si las grietas crecen, la casa se inclina o cruje, salga con su familia y llame a la línea de emergencias.</p>
-            <button class="ver-mas" type="button" aria-expanded="false" aria-controls="m-1">Ver más <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
-            <p class="mas" id="m-1" hidden>No vuelva a entrar hasta que un ingeniero o los organismos de emergencia le digan que es seguro.</p>
-          </div>
-        </li>
-        <li class="servicio ayuda">
-          <div class="cabecera" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><rect x="8" y="2" width="8" height="4" rx="1"/><path d="M9 12h6M9 16h4"/></svg></div>
-          <div class="s-tarjeta">
-            <span class="s-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><rect x="8" y="2" width="8" height="4" rx="1"/><path d="M9 12h6M9 16h4"/></svg></span>
-            <h3>Regístrese en el RUD</h3>
-            <p>El Registro Único de Damnificados (RUD) es la base para entregar las ayudas a su hogar.</p>
-            <button class="ver-mas" type="button" aria-expanded="false" aria-controls="m-2">Ver más <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
-            <p class="mas" id="m-2" hidden>Pregunte en la Alcaldía de Manizales cómo inscribir a su hogar. Hoy hay <span data-dato="viviendas">7.801</span> viviendas registradas.</p>
-          </div>
-        </li>
-        <li class="servicio ayuda">
-          <div class="cabecera" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 18h18M5 18v-3a7 7 0 0 1 14 0v3M10 8V5h4v3"/></svg></div>
-          <div class="s-tarjeta">
-            <span class="s-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 18h18M5 18v-3a7 7 0 0 1 14 0v3M10 8V5h4v3"/></svg></span>
-            <h3>Pida la visita técnica</h3>
-            <p>Si su vivienda no ha sido visitada, solicite la valoración de un ingeniero.</p>
-            <button class="ver-mas" type="button" aria-expanded="false" aria-controls="m-3">Ver más <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
-            <p class="mas" id="m-3" hidden>La visita dice si la vivienda se puede habitar y qué hay que repararle. Muy pronto podrá pedirla también en la ventanilla única.</p>
-          </div>
-        </li>
-        <li class="servicio ayuda">
-          <div class="cabecera" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.8-3.8a6 6 0 0 1-7.9 7.9l-6.9 6.9a2.1 2.1 0 0 1-3-3l6.9-6.9a6 6 0 0 1 7.9-7.9z"/></svg></div>
-          <div class="s-tarjeta">
-            <span class="s-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.8-3.8a6 6 0 0 1-7.9 7.9l-6.9 6.9a2.1 2.1 0 0 1-3-3l6.9-6.9a6 6 0 0 1 7.9-7.9z"/></svg></span>
-            <h3>Reparación con el ARP</h3>
-            <p>Con daño menor, uso restringido o daño mayor, su vivienda entra al aporte a la reparación patrimonial.</p>
-            <button class="ver-mas" type="button" aria-expanded="false" aria-controls="m-4">Ver más <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
-            <p class="mas" id="m-4" hidden>El ingeniero toma las cantidades de obra y el equipo de presupuesto calcula el costo con la lista de precios de la Alcaldía.</p>
-          </div>
-        </li>
-        <li class="servicio ayuda">
-          <div class="cabecera" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m15 12-8.4 8.4a2.1 2.1 0 0 1-3-3L12 9"/><path d="M17.6 15 22 10.6M20.9 11.7l-6.6-6.6a2 2 0 0 0-1.4-.6H10l1.3 1.3a2 2 0 0 1 0 2.8l-.6.6"/></svg></div>
-          <div class="s-tarjeta">
-            <span class="s-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 12-8.4 8.4a2.1 2.1 0 0 1-3-3L12 9"/><path d="M17.6 15 22 10.6M20.9 11.7l-6.6-6.6a2 2 0 0 0-1.4-.6H10l1.3 1.3a2 2 0 0 1 0 2.8l-.6.6"/></svg></span>
-            <h3>Si su casa no se puede salvar</h3>
-            <p>Se abre un expediente de demolición, con informe técnico y aprobación del Comité del Fondo.</p>
-            <button class="ver-mas" type="button" aria-expanded="false" aria-controls="m-5">Ver más <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
-            <p class="mas" id="m-5" hidden>Las cinco fases del expediente están más arriba, en «El proceso». La demolición la puede hacer el municipio o el propietario.</p>
-          </div>
-        </li>
-        <li class="servicio ayuda">
-          <div class="cabecera" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></div>
-          <div class="s-tarjeta">
-            <span class="s-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></span>
-            <h3>Consulte en qué va su caso</h3>
-            <p>La visita, el resultado, el presupuesto o el expediente: pregunte en la Alcaldía de Manizales.</p>
-            <button class="ver-mas" type="button" aria-expanded="false" aria-controls="m-6">Ver más <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
-            <p class="mas" id="m-6" hidden>Muy pronto podrá consultarlo usted mismo en la ventanilla única, sin hacer fila.</p>
-          </div>
-        </li>
+      <ul class="f-equipo">
+        <li class="f-rol"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 18h18M5 18v-3a7 7 0 0 1 14 0v3M10 8V5h4v3"/></svg><b data-dato="ingenieros">52</b><h3>Ingenieros y arquitectos</h3><p>Visitan y evalúan cada vivienda.</p></li>
+        <li class="f-rol"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="10" r="3"/><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/></svg><b>9</b><h3>Gerentes de zona</h3><p>Acompañan a las familias de cada sector.</p></li>
+        <li class="f-rol"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 14c1.5-1.5 3-3.2 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.8 0-3 .5-4.5 2-1.5-1.5-2.7-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4 3 5.5l7 7z"/></svg><h3>Equipo social</h3><p>Orienta a cada persona sobre qué sigue en su caso.</p></li>
+        <li class="f-rol"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 7h8M8 11h8M8 15h5"/></svg><h3>Equipo de presupuesto</h3><p>Calcula y revisa el costo de cada reparación.</p></li>
       </ul>
+    </div>
+  </section>
+
+  <!-- ============ PREGUNTAS FRECUENTES (antes «Ayudas») ============ -->
+  <section class="seccion fondo" id="ayudas" aria-labelledby="h-ayudas">
+    <div class="envoltura f-faq">
+      <figure class="f-faq-foto"><img src="img/fotos/catedral.jpg" alt="Fachada de la catedral basílica de Manizales" width="1280" height="1707" loading="lazy">
+        <figcaption><b>Piso 2</b>Oficinas de Infimanizales · Gestión Social del Plan de Recuperación</figcaption></figure>
+      <div>
+        <p class="f-mano azul">Preguntas frecuentes</p>
+        <h2 id="h-ayudas" class="f-h2">¿Su vivienda fue afectada? Esto es lo que más nos preguntan</h2>
+        <details open><summary>¿Qué hago si hay peligro en mi casa?</summary><p>Si las grietas crecen, la casa se inclina o cruje, salga con su familia y llame a la línea 123. No vuelva a entrar hasta que un ingeniero o los organismos de emergencia le digan que es seguro.</p></details>
+        <details><summary>¿Cómo pido una visita técnica para mi vivienda?</summary><p>En la <a href="ventanilla/">Ventanilla única</a>, desde el celular y sin hacer fila. Un ingeniero visitará su casa y le dirá si se puede habitar y qué hay que reparar.</p></details>
+        <details><summary>¿Cómo me registro como damnificado?</summary><p>El Registro Único de Damnificados (RUD) es la base para las ayudas. Pregunte en la Alcaldía de Manizales cómo inscribir a su hogar. Hoy hay <span data-dato="viviendas">7.801</span> viviendas registradas.</p></details>
+        <details><summary>¿Qué es el aporte para la recuperación (ARP)?</summary><p>Es el apoyo de la Alcaldía para reparar los daños del sismo. Si su vivienda tiene daño menor, uso restringido o daño mayor, el equipo de presupuesto calcula el costo con la lista de precios de la Alcaldía, y el aporte tiene un tope según el nivel de daño.</p></details>
+        <details><summary>¿Y si mi casa no se puede salvar?</summary><p>Se abre un expediente de demolición, con informe técnico y aprobación del Comité del Fondo. La demolición la puede hacer el municipio o el propietario. Las cinco fases están en «El proceso».</p></details>
+        <details><summary>¿En qué va mi caso?</summary><p>Consúltelo en la <a href="ventanilla/">Ventanilla única</a> o acérquese a las oficinas de Infimanizales, piso 2, Gestión Social del Plan de Recuperación.</p></details>
+        <details><summary>¿Voy a reconstruir: necesito licencia de construcción?</summary><p>Si va a reconstruir, ampliar o hacer una obra nueva, sí. En la VUC encuentra paso a paso cómo tramitarla (ver «Para reconstruir», más abajo).</p></details>
+      </div>
     </div>
   </section>
 
@@ -468,6 +391,16 @@
           <li><span class="v-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 18h18M5 18v-3a7 7 0 0 1 14 0v3M10 8V5h4v3"/></svg></span><div><h3><a href="ventanilla/#pedir-visita">Pedir una visita técnica</a></h3><p>Si su vivienda todavía no ha sido valorada por un ingeniero.</p></div></li>
           <li><span class="v-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M9 13h6M9 17h4"/></svg></span><div><h3><a href="ventanilla/#seguimiento">Seguir su radicado</a></h3><p>En qué va su solicitud, paso a paso, con su número de radicado.</p></div></li>
         </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ LLAMADO FINAL ============ -->
+  <section class="seccion f-sin-arriba" aria-label="Estamos aquí para acompañarle">
+    <div class="envoltura">
+      <div class="f-llamado">
+        <div><p class="f-mano">¿Su casa fue afectada?</p><h2>Estamos aquí para acompañarle en cada paso</h2></div>
+        <div class="f-acciones"><a class="boton amarillo" href="ventanilla/">Ventanilla única</a><a class="boton blanco" href="#ayudas">Preguntas frecuentes</a></div>
       </div>
     </div>
   </section>
