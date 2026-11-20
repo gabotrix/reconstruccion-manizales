@@ -225,14 +225,14 @@
 
   // la tabla: comunas, zona rural y sin ubicar
   function tabla() {
-    const filas = [...C.comunas, ...(C.rural ? [Object.assign({ nombre: 'Zona rural', num: '' }, C.rural)] : []), ...(C.sin_ubicar ? [Object.assign({ nombre: 'Sin ubicar', num: '' }, C.sin_ubicar)] : [])];
+    const filas = [...C.comunas, ...(C.rural ? [Object.assign({ nombre: 'Zona rural', num: '', k: 'rural' }, C.rural)] : []), ...(C.sin_ubicar ? [Object.assign({ nombre: 'Sin ubicar', num: '', k: 'sin_ubicar' }, C.sin_ubicar)] : [])];
     const conRep = hayRep(), conCom = hayCom();
     const tot = f => filas.reduce((a, c) => a + (f(c) || 0), 0);
     const celdaN = (n, de, l) => h('td', { 'data-l': l }, fmt(n), ' ', h('small', {}, pct(n, de)));
     const celdaA = (x, l) => x && num(x.n) ? h('td', { 'data-l': l }, fmt(x.n), ' ', h('small', {}, pesos(x.valor || 0))) : h('td', { 'data-l': l, class: 'vacio' }, '—');
     const cols = [h('th', { scope: 'col' }, 'Comuna'), h('th', { scope: 'col' }, 'Inmuebles visitados'), h('th', { scope: 'col' }, 'Requieren ARP'),
       conRep ? h('th', { scope: 'col' }, 'ARP reparación asignados') : null, conCom ? h('th', { scope: 'col' }, 'ARP comercio asignados') : null];
-    const ex = c => c.num ? (R.comunas || {})[String(c.num)] || {} : {};
+    const ex = c => (R.comunas || {})[c.num ? String(c.num) : c.k] || {};
     $('#t-comunas').replaceChildren(h('table', {},
       h('caption', { class: 'oculto' }, 'Resultados por comuna'),
       h('thead', {}, h('tr', {}, cols)),

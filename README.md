@@ -11,12 +11,22 @@ Manizales.
   - `comunas.json`: los contornos de las comunas para el mapa.
   - `arp.json`: lo que no trae el corte diario. Las asignaciones ARP (edificaciones y comercio), los comercios
     afectados, las cifras de cada paso del proceso y el detalle por comuna de las capas «ARP Reparación» y «ARP Comercio».
-    Se edita a mano mientras no exista la función en vivo, y el corte diario no lo toca.
+    El corte diario no lo toca; sus cifras quedan de respaldo si la función en vivo falla.
 
 Las cifras no contienen nombres, direcciones, números prediales ni ningún dato que identifique a una persona o una
 vivienda (Ley 1581 de 2012).
 
-### Cifras en vivo
+### Cifras en vivo (activas desde el 19-nov-2026)
+
+La función `cifras-publicas` corre en el servidor de la plataforma. Su código y el cambio de base que la acompaña están
+en `servidor/cifras-publicas/` (`index.ts` se publica con `funcion-publicar` y `cambio.sql` se aplica con `sql-cambio`).
+
+- **Asignación ARP = oficio generado**, como en la sala. Edificaciones salen de `arp_socializacion` y comercio de
+  `comercio_casos`.
+- **La comuna de cada asignación:** la del predio de la visita. Para el comercio, la de sus coordenadas o, si no las
+  tiene, la de su barrio.
+- **Las visitas, las comunas y las demoliciones** salen de `publico_cifras()`, la misma fuente del corte diario.
+- **Caché:** la respuesta se guarda 5 minutos en `public.publico_web_cache`.
 
 Si `datos/arp.json` trae `"en_vivo": "https://api.manizalesconstruye.camacolcaldas.com/functions/v1/cifras-publicas"`,
 la página consulta esa dirección al abrir y cada 5 minutos, y sus cifras reemplazan a las de los archivos. Si falla,
@@ -47,6 +57,7 @@ La función responde un GET público, sin sesión, con cifras sumadas y nada má
   `{ "n": 120, "txt": "aportes entregados con resolución" }`).
 - Mientras `comunas` venga vacío, la ficha del mapa dice que el detalle por comuna se está consolidando, y la tabla no
   muestra las columnas de ARP asignados.
+- `comunas` usa el número de la comuna como llave, más `rural` y `sin_ubicar`.
 
 ## La ventanilla única (`ventanilla/`)
 

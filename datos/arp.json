@@ -1,12 +1,18 @@
 {
- "corte": "2026-11-19T21:56:00.000Z",
- "en_vivo": null,
+ "corte": "2026-11-20T04:42:13.000Z",
+ "en_vivo": "https://api.manizalesconstruye.camacolcaldas.com/functions/v1/cifras-publicas",
  "afectados": {
   "comercios": 2000
  },
  "asignaciones": {
-  "edificaciones": { "n": 48, "valor": 757645391 },
-  "comercio": { "n": 56, "valor": 626824779 }
+  "edificaciones": {
+   "n": 65,
+   "valor": 910573956
+  },
+  "comercio": {
+   "n": 27,
+   "valor": 302445617
+  }
  },
  "pasos": {
   "visita": null,
