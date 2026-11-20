@@ -809,3 +809,21 @@ td.vacio { color: var(--texto-2); }
 @media (max-width: 560px) {
   .servicios.cinco { grid-template-columns: minmax(0, 1fr); }
 }
+
+/* ================= 19-nov (noche): fotos reales de las entregas ARP ================= */
+.f-collage img { filter: none; }
+.f-c1 { object-position: 52% 30%; }
+.f-c2 { object-position: 55% 40%; }
+.f-c3 { object-position: 82% 35%; }
+.galeria { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); grid-auto-rows: 220px; gap: 14px; }
+.galeria li { border-radius: 22px; overflow: hidden; background: var(--fondo); }
+.galeria img { width: 100%; height: 100%; object-fit: cover; transition: transform .5s ease; }
+.galeria li:hover img { transform: scale(1.04); }
+.galeria .g-grande { grid-column: span 2; grid-row: span 2; }
+.galeria-nota { text-align: center; margin-top: 16px; }
+.servicio .foto img { object-position: 50% 30%; }
+@media (max-width: 760px) {
+  .galeria { grid-template-columns: repeat(2, minmax(0, 1fr)); grid-auto-rows: 150px; gap: 10px; }
+  .galeria li { border-radius: 16px; }
+}
+@media (prefers-reduced-motion: reduce) { .galeria img { transition: none; } }
