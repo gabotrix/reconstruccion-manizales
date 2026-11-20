@@ -136,3 +136,36 @@
 
 /* (20-nov) el contorno, en su lugar pero azul: amarillo sobre el amarillo del titular no se leía */
 .hero-img .d-contorno { border-color: var(--azul-2); opacity: 1; }
+
+/* ================= 20-nov · arreglos de celular ================= */
+@media (max-width: 760px) {
+  /* asignaciones ARP: foto más pequeña y montos que caben */
+  .asig { padding: 16px; }
+  .asig-h { font-size: 18px; }
+  .asig-c { grid-template-columns: 68px minmax(0, 1fr); gap: 14px; padding: 12px; }
+  .asig-c .forma { width: 68px; height: 68px; }
+  .asig-c .cif-t-rot { font-size: 11px; letter-spacing: .1em; }
+  .asig-c div > b { font-size: clamp(20px, 6.4vw, 28px); white-space: nowrap; }
+  .asig-total { padding: 18px 20px; gap: 2px 14px; }
+  .asig-total > b { font-size: clamp(22px, 7.2vw, 34px); white-space: nowrap; }
+  .asig-total .d-cruces { display: none; }
+  /* capas del mapa: dos botones del mismo ancho en una sola fila */
+  .segmento-osc { display: grid; grid-template-columns: 1fr 1fr; width: 100%; }
+  .segmento-osc button { justify-content: center; padding: 10px 8px; font-size: 13.5px; gap: 6px; }
+  .segmento-osc button svg { width: 15px; height: 15px; }
+  /* cifras de la ficha del mapa */
+  .kpi { padding: 12px 14px; min-height: 84px; }
+  .kpi b { font-size: clamp(17px, 5.4vw, 24px); }
+  .kpi-anillo { flex-direction: column; align-items: flex-start; justify-content: flex-end; gap: 6px; }
+  .anillo, .anillo-svg { width: 50px; height: 50px; }
+  .anillo b { font-size: 13px; }
+  /* atención al ciudadano */
+  .atencion-card { padding: 22px 18px; }
+  .atencion-cab { gap: 10px; align-items: center; }
+  .atencion-cab .pildora { font-size: 11px; padding: 6px 12px; letter-spacing: .06em; margin: 0; }
+  .sello-ast { width: 40px; height: 40px; flex: none; }
+  .sello-ast svg { width: 20px; height: 20px; }
+  .atencion-card .t-l { font-size: clamp(24px, 7.4vw, 34px); margin-top: 16px; overflow-wrap: break-word; }
+  .atencion-card p { font-size: 16px; }
+}
+@media (max-width: 420px) { .sello-ast { display: none; } }
